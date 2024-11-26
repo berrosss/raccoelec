@@ -16,7 +16,7 @@ const Confetti = forwardRef((_, ref) => {
     container.style.width = "100%";
     container.style.height = "100%";
     container.style.pointerEvents = "none";
-    document.body.appendChild(container);
+    document.body.appendChild(container); 
 
     for (let i = 0; i < 100; i++) {
       const particle = document.createElement("div");
