@@ -9,39 +9,9 @@ import Page from "@/app/components/Dynamic/Contents/Page";
 //   params: { slug: string[] };
 // };
 
-
 interface Post {
-  type: "post";
   title: string;
-  description?: string;
-  seo?: {
-    metaDesc?: string;
-    opengraphPublishedTime?: string;
-    opengraphModifiedTime?: string;
-  };
-  featuredImage?: {
-    node?: {
-      sourceUrl: string;
-    };
-  };
-  author?: {
-    node?: {
-      name: string;
-    };
-  };
   slug: string;
-}
-
-interface Page {
-  type: "page";
-  title: string;
-  description?: string;
-}
-
-interface Category {
-  type: "category";
-  name: string;
-  posts: Post[];
 }
 
 async function fetchContent(slug: string[]) {
