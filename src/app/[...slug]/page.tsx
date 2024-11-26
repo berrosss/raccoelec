@@ -1,9 +1,4 @@
-import React from "react";
-import { notFound } from "next/navigation";
-import { getContentBySlug, getAllSlugs } from "@/apis/graphql/content";
-import { Metadata } from "next";
-import Article from "@/app/components/Dynamic/Contents/Article";
-import Page from "@/app/components/Dynamic/Contents/Page";
+
 
 // type Props = {
 //   params: { slug: string[] };
