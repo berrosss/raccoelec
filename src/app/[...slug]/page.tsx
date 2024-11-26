@@ -5,30 +5,30 @@ import { Metadata } from "next";
 import Article from "@/app/components/Dynamic/Contents/Article";
 import Page from "@/app/components/Dynamic/Contents/Page";
 
-type Props = {
-  params: { slug: string[] };
-};
+// type Props = {
+//   params: { slug: string[] };
+// };
 
-interface Post {
-  title: string;
-  slug: string;
-}
+// interface Post {
+//   title: string;
+//   slug: string;
+// }
 
-async function fetchContent(slug: string[]) {
-  let content = await getContentBySlug(slug.join("/"));
-  if (!content) {
-    const parentSlug = slug[0];
-    const parentContent = await getContentBySlug(parentSlug);
-    if (parentContent?.type === "category") {
-      const childSlug = slug.slice(1).join("/");
-      content = await getContentBySlug(childSlug);
-      if (content) {
-        content = { ...content, parentSlug, isSubCategory: true };
-      }
-    }
-  }
-  return content;
-}
+// async function fetchContent(slug: string[]) {
+//   let content = await getContentBySlug(slug.join("/"));
+//   if (!content) {
+//     const parentSlug = slug[0];
+//     const parentContent = await getContentBySlug(parentSlug);
+//     if (parentContent?.type === "category") {
+//       const childSlug = slug.slice(1).join("/");
+//       content = await getContentBySlug(childSlug);
+//       if (content) {
+//         content = { ...content, parentSlug, isSubCategory: true };
+//       }
+//     }
+//   }
+//   return content;
+// }
 
 // export async function generateMetadata({ params }: { params: { slug: string[] } }): Promise<Metadata> {
 //   const content = await fetchContent(params.slug);
@@ -122,8 +122,8 @@ async function fetchContent(slug: string[]) {
 // }
 
 export async function generateStaticParams() {
-  const slugs = await getAllSlugs();
-  return slugs.map((slug) => ({ slug: slug.split("/") }));
+  // const slugs = await getAllSlugs();
+  // return slugs.map((slug) => ({ slug: slug.split("/") }));
 }
 
 // function getSchemaMarkup(content: any) {
