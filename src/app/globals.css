@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animated-underline {
+  position: relative;
+}
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 15;
+  left: 0;
+  @apply bg-[#1523dc];
+  transition: width 0.3s ease-in-out;
+}
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Hide scrollbar for modern browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.active-button {
+  color: white;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  border: solid 1px transparent;
+  border-radius: 0.5rem;
+}
+
+/* Styles for inactive button */
+.inactive-button {
+  color: #1523dc;
+  padding: 15px 50px;
+  background: white;
+  border: solid 1px #ebf2fb;
+  border-radius: 0.5rem;
+}
+
+.next_button {
+  background: #1523dc !important;
+  color: white !important;
+  border: 1px solid #1523dc !important;
+}
+.next_button:hover {
+  background: white !important;
+  color: #1523dc !important;
+  border: 1px solid #1523dc !important;
+}
+
+.back_button {
+  background: #7a7d7e !important;
+  color: white !important;
+  border: 1px solid #7a7d7e !important;
+}
+.back_button:hover {
+  background: white !important;
+  color: #7a7d7e !important;
+  border: 1px solid #7a7d7e !important;
+}
+
+.tempslist {
+  list-style-type: none;
+  padding-left: 0;
+}
+.tempslist li:before {
+  content: "";
+  display: block;
+  float: left;
+  height: 6px;
+  width: 6px;
+  border-radius: 100px;
+  margin-top: 8.5px;
+  background: #1523dc;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+.active {
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  color: #1523dc; /* Blue color for active step */
+}
+
+.inactive {
+  color: gray; /* Gray color for inactive steps */
+}
+
+.step {
+  color: gray;
+  font-size: 16px;
+}
+
+.step.active {
+  color: blue;
+  font-weight: bold;
+}
+
+
+.viab:hover {
+  transform: translate(0, -10px) !important;
+}
+.viab2:hover {
+  box-shadow: 2px -3px 132px -59px rgba(0, 173, 131, 0.75) !important;
+  transform: translate(0, -10px) !important;
+}
+
+.animated-underline {
+  position: relative;
+}
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1623dc; /* Border color */
+  transition: width 0.3s ease-in-out;
+}
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 1.5s ease;
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-out {
+  animation: zoomOut 1s forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 1s forwards;
+}
+
+.card-timline-item:hover {
+  background-color: #1523dc !important;
+  .font-bold {
+    color: white !important;
+  }
+  .font-caveat {
+    color: white !important;
+  }
+}
+
+/* MARQUEE SLIDING CSS */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  width: max-content;
+  /* Prevent logos from wrapping to the next line */
+  white-space: nowrap;
+}
+
+.carousel-item {
+  padding: 50px;
+  display: inline-block;
+  min-width: calc(100% / var(--items-per-page));
+  box-sizing: border-box;
+  height: 120px;
+  width: 220px;
+  text-align: center;
+  display: flex;
+}
+
+.carousel-item img {
+  padding: 4px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-container {
+  animation: scroll 70s linear infinite;
+}
+
+
+/* General Row Styling */
+.row {
+  position: relative;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Animation for top row moving down */
+.fade-in {
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+/* Animation for bottom row moving up */
+.row.bottom-row.move-up {
+  transform: translateY(-80px);
+}
+
+.post_content p {
+  @apply mb-8;
+}
+.post_content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-2;
+  @apply text-[25px];
+  @apply font-semibold;
+  @apply text-gray-900;
+}
+.post_content ul,
+ol {
+  @apply mb-8;
+}
+
+.post_content iframe {
+  @apply mb-8;
+  width: 100%;
+}
+
+.post_content a {
+  text-decoration: underline;
+  @apply decoration-[#1523dc];
+  transition: 0.3s;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.post_content a:hover {
+  @apply bg-[#1523dc];
+}
+
+.post_content {
+  list-style-type: none;
+  @apply pl-0;
+}
+.post_content li {
+  @apply mb-3;
+  font-size: 15px;
+}
+.post_content li:before {
+  content: "";
+  display: block;
+  float: left;
+  height: 7px;
+  width: 7px;
+  border-radius: 0px;
+  margin-top: 8px;
+  @apply bg-[#1523dc];
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
+.post_content img {
+  @apply mb-8;
+}
+
+.post_content table {
+  @apply w-full;
+  @apply border-collapse;
+  @apply mb-6;
+}
+
+.post_content table th,
+.post_content table td {
+  @apply border;
+  @apply border-gray-300;
+  @apply p-4;
+  @apply text-left;
+  @apply text-sm;
+  @apply text-gray-900;
+}
+
+.post_content table th {
+  @apply bg-gray-100;
+  @apply font-semibold;
+  @apply text-gray-700;
+}
+
+.post_content table tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.post_content table tr:hover {
+  @apply bg-gray-100;
+}
+
+.post_content blockquote {
+  @apply border-l-4;
+  @apply border-slate-400;
+  @apply pl-4;
+  @apply py-2;
+  @apply italic;
+  @apply text-gray-700;
+  @apply my-6;
+  @apply mt-0;
+  @apply mb-7;
+  @apply bg-gray-100;
+  @apply inline-flex;
+  @apply items-center;
+}
+
+.post_content blockquote p {
+  @apply text-lg;
+  @apply leading-relaxed;
+  @apply inline;
+  @apply not-italic;
+  @apply mb-0;
+}
