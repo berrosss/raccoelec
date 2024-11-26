@@ -1,4 +1,4 @@
-import { useEffect, useImperativeHandle, forwardRef } from "react";
+import { useImperativeHandle, forwardRef } from "react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 

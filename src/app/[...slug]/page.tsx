@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import Article from "@/app/components/Dynamic/Contents/Article";
 import Page from "@/app/components/Dynamic/Contents/Page";
 
-type Props = {
-  params: { slug: string[] };
-};
+// type Props = {
+//   params: { slug: string[] };
+// };
 
 interface Post {
   title: string;
