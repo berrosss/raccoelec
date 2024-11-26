@@ -116,10 +116,10 @@
 //   );
 // }
 
-export async function generateStaticParams() {
+// export async function generateStaticParams() {
   // const slugs = await getAllSlugs();
   // return slugs.map((slug) => ({ slug: slug.split("/") }));
-}
+// }
 
 // function getSchemaMarkup(content: any) {
 //   switch (content.type) {
