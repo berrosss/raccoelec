@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import { useEffect, useState, useRef } from 'react';
 
 const useIntersectionObserver = (options = {}) => {
