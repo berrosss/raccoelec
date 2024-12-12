@@ -285,7 +285,7 @@ const Estimation = () => {
         <div id="helloContent" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <Image src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" width={50} height={50} />
+              <img src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
