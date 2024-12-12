@@ -54,6 +54,8 @@ const Tab1 = () => {
       {services.map((service) => (
         <div
           data-aos={service.animation}
+          data-aos-duration="20"
+          data-aos-once="true"
           key={service.id}
           className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform "
         >

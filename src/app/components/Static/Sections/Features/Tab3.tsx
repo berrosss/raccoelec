@@ -53,7 +53,9 @@ const Tab1 = () => {
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {services.map((service) => (
         <div
-        data-aos={service.animation}
+          data-aos={service.animation}
+          data-aos-duration="20"
+          data-aos-once="true"
           key={service.id}
           className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
           data-taos-class="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"

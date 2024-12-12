@@ -50,8 +50,11 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center min-h-screen mb-20 px-5 lg:px-0">
+    <div className="flex justify-center items-center min-h-screen mb-20 px-5 lg:px-0 mt-16">
       <div className="w-full max-w-6xl "  >
+        <h1 className="text-4xl font-bold py-16">
+            <span className="text-zinc-950">Nous <span className="text-[#203edc]">raccordons</span> votre projet en illuminant vos <span className="text-green-500">démarches.</span></span>
+        </h1>
         <div className="relative">
           {/* Vertical Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-200" />

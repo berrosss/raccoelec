@@ -1,23 +1,22 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Hero = () => {
-
   const images = [
-    "/assets/hero/1.jpg", 
+    "/assets/hero/1.jpg",
     "/assets/hero/2.jpeg",
     "/assets/hero/3.jpeg",
   ];
- 
+
   return (
     <header className="bg-[#1523dc] pt-6 overflow-hidden mb-20">
       <div className="container mx-auto px-4 py-12 pb-0 relative">
@@ -51,13 +50,16 @@ const Hero = () => {
               >
                 Modification de branchement
               </Link>
-              <Link href="/mise-en-service" className="bg-white text-black w-full text-center lg:w-auto font-bold hover:bg-[#149163] hover:text-white transition-all px-16 py-3 rounded-full">
+              <Link
+                href="/mise-en-service"
+                className="bg-white text-black w-full text-center lg:w-auto font-bold hover:bg-[#149163] hover:text-white transition-all px-16 py-3 rounded-full"
+              >
                 Mise en service
               </Link>
             </div>
 
-            {/* <div className="flex justify-center lg:justify-start items-center space-x-8 mt-20 relative xl:left-28">
-              <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center lg:justify-start items-center space-x-8 mt-20 relative">
+              {/* <div className="flex justify-center items-center flex-col">
                 <Image
                   src="https://raccoelec.fr/wp-content/uploads/2024/06/Google_logo-svg.png"
                   alt="Google"
@@ -94,38 +96,61 @@ const Hero = () => {
                 <p className="font-bold text-white text-md text-center">
                   4.4/5 | 10000+ reviews
                 </p>
+              </div> */}
+              <div className="flex space-x-4">
+                <div className="flex items-center space-x-2">
+                  <div className="bg-green-100 rounded-full p-1">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <span className="text-white">Mise à jour quotidienne</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="bg-green-100 rounded-full p-1">
+                  <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </div>
+                  <span className="text-white">Sources officielles</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="bg-green-100 rounded-full p-1">
+                  <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </div>
+                  <span className="text-white">Support 7j/7</span>
+                </div>
               </div>
-            </div> */}
-
+            </div>
           </div>
 
           <div className="xl:w-[68%] xl:ml-auto">
             {/* Carousel placeholder */}
             <div className="relative h-96 xl:h-[600px] overflow-hidden xl:left-[22%] rounded-none">
-              
-
-            
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              spaceBetween={30}
-              slidesPerView={1}
-              autoplay={{ delay: 4000 }}
-              loop={true}
-              className="h-full rounded-none"
-            >
-              {images.map((src, index) => (
-                <SwiperSlide key={index} className="w-full h-full rounded-none">
-                  <Image
-                    src={src}
-                    alt={`Slide ${index + 1}`}
-                    className="object-cover rounded-none"
-                    fill
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                autoplay={{ delay: 4000 }}
+                loop={true}
+                className="h-full rounded-none"
+              >
+                {images.map((src, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="w-full h-full rounded-none"
+                  >
+                    <Image
+                      src={src}
+                      alt={`Slide ${index + 1}`}
+                      className="object-cover rounded-none"
+                      fill
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>
