@@ -272,7 +272,7 @@ const aproposnous = () => {
                 </div>
                         
             </div>
-        </section>
+        </section>  
 
         <section className="max-w-7xl mx-auto mt-10 p-8">
             <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 gap-4 flex justify-center items-center text-center">
