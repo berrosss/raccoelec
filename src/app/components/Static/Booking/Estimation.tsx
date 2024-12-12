@@ -300,7 +300,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 mb-4">
-            Le prix moyen est de 410 € TTC, sous condition de confirmation de la
+          Le tarif de la prestation est 129,8 € avec un prix moyen est de 410 € TTC, sous condition de confirmation de la
             solution technique décrite ci-dessus.
           </p>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -374,7 +374,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 max-w-[550px] mb-10">
-            Le prix est variable en fonction de l’ampleur des travaux à
+          Le tarif de la prestation est 129,8 € avec un prix est variable en fonction de l’ampleur des travaux à
             réaliser. Une étude technique et financière par Enedis est
             nécessaire.
           </p>
@@ -450,7 +450,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 mb-4">
-            Le prix moyen est de 1600 € TTC, sous condition de confirmation de
+            Le tarif de la prestation est 129,8 € avec un prix moyen est de 1600 € TTC, sous condition de confirmation de
             la solution technique décrite ci-dessus.
           </p>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -523,7 +523,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 mb-4">
-            Le prix est variable et comprend :
+          Le tarif de la prestation est 129,8 € avec un prix est variable et comprend :
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-2">
@@ -595,7 +595,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 mb-4">
-            Le prix est variable et comprend :
+          Le tarif de la prestation est 129,8 € avec un prix est variable et comprend :
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-2">
