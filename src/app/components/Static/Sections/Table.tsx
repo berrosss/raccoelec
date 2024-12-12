@@ -313,7 +313,7 @@ const Table = () => {
               {shuffledData.map((item, index) => (
                 <tr className=" bg-[#ffffff] fade-in " key={item.id} >
                   <td className="border-none w-4 p-4 text-center">
-                    <div className="w-6 h-6 bg-amber-400 rounded-full flex justify-center items-center text-white text-center">
+                    <div className="w-6 h-6 bg-[#203edc] rounded-full flex justify-center items-center text-white text-center">
                       {index + 1}
                     </div>
                   </td>

@@ -165,13 +165,13 @@ const Footer = () => {
               </p>
               <div className="flex justify-start mt-6">
                   <a className="col-auto col-xl px-1">
-                      <Image data-toggle="popover" data-content="" className="img-fluid" src="https://cdn.de Raccoelec.fr/img/badge-pci-compliant.svg?v=v4.2.12" alt="PCI compliant" width="89" height="30" />
+                      <Image data-toggle="popover" data-content="" className="img-fluid" src="/assets/footer/1-svg.png" alt="PCI compliant" width="89" height="30" />
                   </a>
                   <a className="col-auto col-xl px-1">
-                      <Image data-toggle="popover" data-content="" className="img-fluid" src="https://cdn.de Raccoelec.fr/img/badge-gdpr-compliant.svg?v=v4.2.12" alt="GDPR compliant" width="89" height="30" />
+                      <Image data-toggle="popover" data-content="" className="img-fluid" src="/assets/footer/2-svg.png" alt="GDPR compliant" width="89" height="30" />
                   </a>
                   <a className="col-auto col-xl px-1">
-                      <Image data-toggle="popover" data-content="" className="img-fluid" src="https://cdn.de Raccoelec.fr/img/badge-safe-compliant.svg?v=v4.2.12" alt="GDPR compliant" width="89" height="30" />
+                      <Image data-toggle="popover" data-content="" className="img-fluid" src="/assets/footer/3-svg.png" alt="GDPR compliant" width="89" height="30" />
                   </a>
               </div>
             </div>
@@ -294,9 +294,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-zinc-50 text-[10px] text-center mt-8">
-          Copyright © 2024 - Raccoelec Web Group SL. Tous droits réservés. Raccoelec est une marque déposée et appartenant à de Raccoelec Web Group SL
+          Copyright © 2024 - Raccoelec -  Tous droits réservés.
         </div>
-        <div className="text-zinc-50 text-[10px] text-center "> Raccoelec Web Group SL, Avinguda Diagonal, 598, 2-2, 08021, Barcelone, Espagne - NIF : B67620658 - TVA : ESB67620658</div>
       </div>
     </>
   );
