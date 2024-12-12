@@ -4,6 +4,7 @@
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import Image from "next/image";
 
 // Define the type for your table data
 interface TableData {
@@ -26,12 +27,12 @@ interface TableData {
 
 const Table = () => {
   const initialData: TableData[] = [
-    { id: 1, img: 'assets/1.webp', name:"TOTALENERGIES SE", date: "01/01/1954", age: 70, dpts:"92", chifreAffaire: "237.1", dateChifreAffaire:"2023", resultNet:"87.9", dateResultNet: "2022", delaiPaiment: "104", colorDelaiPaiment: "bg-amber-700", dateDelaiPaiment: "103", svg1: true, svg2: false },
-    { id: 2, img: 'assets/2.webp', name:"ELECTRICITE DE FRANCE", date: "01/01/1955", age: 69, dpts:"75", chifreAffaire: "90.5", dateChifreAffaire:"2023", resultNet:"7.7", dateResultNet: "2023", delaiPaiment: "76", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "76", svg1: false, svg2: false },
-    { id: 3, img: 'assets/3.webp', name:"ENGIE", date: "01/01/1954", age: 20, dpts:"92", chifreAffaire: "509", dateChifreAffaire:"2022", resultNet:"9.6", dateResultNet: "2023", delaiPaiment: "76", colorDelaiPaiment: "bg-lime-500", dateDelaiPaiment: "46", svg1: false, svg2: true },
-    { id: 4, img: 'assets/1.webp', name:"TOTALENERGIES MARKETING FRANCE", date: "25/03/2011", age: 20, dpts:"24", chifreAffaire: "670", dateChifreAffaire:"2015", resultNet:"77.8", dateResultNet: "2022", delaiPaiment: "70", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "37", svg1: true, svg2: false },
-    { id: 5, img: 'assets/5.webp', name:"ENEDIS", date: "18/12/2002", age: 20, dpts:"92", chifreAffaire: "280", dateChifreAffaire:"2020", resultNet:"9.3", dateResultNet: "2010", delaiPaiment: "55", colorDelaiPaiment: "bg-lime-500", dateDelaiPaiment: "76", svg1: true, svg2: false },
-    { id: 6, img: 'assets/6.webp', name:"RTE RESEAU DE TRANSPORT D ELECTRICITE", date: "19/12/2002", age: 20, dpts:"92", chifreAffaire: "670", dateChifreAffaire:"2022", resultNet:"88.5", dateResultNet: "2020", delaiPaiment: "88", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "99", svg1: true, svg2: true },
+    { id: 1, img: '/assets/tablebrands/1.webp', name:"TOTALENERGIES SE", date: "01/01/1954", age: 70, dpts:"92", chifreAffaire: "237.1", dateChifreAffaire:"2023", resultNet:"87.9", dateResultNet: "2022", delaiPaiment: "104", colorDelaiPaiment: "bg-amber-700", dateDelaiPaiment: "103", svg1: true, svg2: false },
+    { id: 2, img: '/assets/tablebrands/2.webp', name:"ELECTRICITE DE FRANCE", date: "01/01/1955", age: 69, dpts:"75", chifreAffaire: "90.5", dateChifreAffaire:"2023", resultNet:"7.7", dateResultNet: "2023", delaiPaiment: "76", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "76", svg1: false, svg2: false },
+    { id: 3, img: '/assets/tablebrands/3.webp', name:"ENGIE", date: "01/01/1954", age: 20, dpts:"92", chifreAffaire: "509", dateChifreAffaire:"2022", resultNet:"9.6", dateResultNet: "2023", delaiPaiment: "76", colorDelaiPaiment: "bg-lime-500", dateDelaiPaiment: "46", svg1: false, svg2: true },
+    { id: 4, img: '/assets/tablebrands/1.webp', name:"TOTALENERGIES MARKETING FRANCE", date: "25/03/2011", age: 20, dpts:"24", chifreAffaire: "670", dateChifreAffaire:"2015", resultNet:"77.8", dateResultNet: "2022", delaiPaiment: "70", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "37", svg1: true, svg2: false },
+    { id: 5, img: '/assets/tablebrands/5.webp', name:"ENEDIS", date: "18/12/2002", age: 20, dpts:"92", chifreAffaire: "280", dateChifreAffaire:"2020", resultNet:"9.3", dateResultNet: "2010", delaiPaiment: "55", colorDelaiPaiment: "bg-lime-500", dateDelaiPaiment: "76", svg1: true, svg2: false },
+    { id: 6, img: '/assets/tablebrands/6.webp', name:"RTE RESEAU DE TRANSPORT D ELECTRICITE", date: "19/12/2002", age: 20, dpts:"92", chifreAffaire: "670", dateChifreAffaire:"2022", resultNet:"88.5", dateResultNet: "2020", delaiPaiment: "88", colorDelaiPaiment: "bg-rose-700", dateDelaiPaiment: "99", svg1: true, svg2: true },
   ];
 
   const [shuffledData, setShuffledData] = useState<TableData[]>(initialData);
@@ -310,7 +311,7 @@ const Table = () => {
             </thead>
             <tbody>
               {shuffledData.map((item, index) => (
-                <tr className=" bg-[#283136] fade-in " key={item.id} >
+                <tr className=" bg-[#ffffff] fade-in " key={item.id} >
                   <td className="border-none w-4 p-4 text-center">
                     <div className="w-6 h-6 bg-amber-400 rounded-full flex justify-center items-center text-white text-center">
                       {index + 1}
@@ -320,14 +321,16 @@ const Table = () => {
                     scope="row"
                     className="border-none flex items-center px-6 py-6 whitespace-nowrap dark:text-white"
                   >
-                    <img
+                    <Image
                       decoding="async"
                       className="w-10 h-10 object-contain"
                       src={item.img}
                       alt="Jese image"
+                      height={100}
+                      width={100}
                     />
                     <div className="ps-3">
-                      <div className="text-base font-semibold uppercase truncate w-full max-w-xs">
+                      <div className=" text-gray-400 text-base font-semibold uppercase truncate w-full max-w-xs">
                         {item.name}
                       </div>
                     </div>
@@ -474,43 +477,6 @@ const Table = () => {
         </div>
       </div>
     </section>
-    // <div className="p-4">
-    //   <button
-    //     onClick={shuffleData}
-    //     className="mb-4 px-4 py-2 bg-blue-500 text-white rounded"
-    //   >
-    //     Shuffle
-    //   </button>
-    //   <table ref={tableRef} className="min-w-full border-collapse border border-gray-800">
-    //     <tbody>
-    //       {shuffledData.map((item, index) => (
-    //         <tr className="bg-[#283136]" key={item.id}>
-    //           <td className="border-none w-4 p-4 text-center">
-    //             <div className="w-6 h-6 bg-amber-400 rounded-full flex justify-center items-center text-white text-center">
-    //               {index + 1}
-    //             </div>
-    //           </td>
-    //           <th scope="row" className="border-none flex items-center px-6 py-6 whitespace-nowrap dark:text-white">
-    //             <img decoding="async" className="w-10 h-10 object-contain" src={item.img} alt={item.name} />
-    //             <div className="ps-3">
-    //               <div className="text-base font-semibold uppercase truncate w-full max-w-xs">{item.name}</div>
-    //             </div>
-    //           </th>
-    //           <td className="border-none px-6 py-4">{item.date}</td>
-    //           <td className="border-none px-6 py-4">{item.age}</td>
-    //           <td className="border-none px-6 py-4">{item.dpts}</td>
-    //           <td className="border-none px-6 py-4">{item.chifreAffaire} md€</td>
-    //           <td className="border-none px-6 py-4">{item.resultNet} md€</td>
-    //           <td className="border-none px-6 py-4">
-    //             <div className={`text-white text-base font-semibold ${item.colorDelaiPaiment} px-3 rounded`}>
-    //               {item.delaiPaiment} Jrs
-    //             </div>
-    //           </td>
-    //         </tr>
-    //       ))}
-    //     </tbody>
-    //   </table>
-    // </div>
   );
 };
 

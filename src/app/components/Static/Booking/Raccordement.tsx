@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { PiUsersThreeLight } from "react-icons/pi";
 import emailjs from "emailjs-com";
+import Image from "next/image";
+
 import {
   IoFolderOpenOutline,
   IoMailOutline,
@@ -1098,10 +1100,11 @@ const Raccordement = () => {
                     <div className="text-black text-sm text-center mb-0.5">
                       Oui, mon terrain est viabilisé
                     </div>
-                    <img
+                    <Image
                       src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
                       alt="Terrain viabilisé"
                       className="w-full h-full object-cover"
+                      fill
                     />
                     <div className="text-black text-xs text-center">
                       Exemple de terrain viabilisé
@@ -1123,10 +1126,11 @@ const Raccordement = () => {
                     <div className="text-black text-sm text-center mb-0.5">
                       Non, mon terrain n&lsquo;est pas
                     </div>
-                    <img
+                    <Image
                       src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
                       alt="Terrain viabilisé"
                       className="w-full h-full object-cover"
+                      fill
                     />
                     <div className="text-black text-xs text-center">
                       Exemple de terrain non viabilisé
@@ -1261,10 +1265,11 @@ const Raccordement = () => {
                     <div className="text-black text-lg text-center mb-0.5">
                       Oui
                     </div>
-                    <img
+                    <Image
                       src="https://cdn.pixabay.com/photo/2023/05/15/18/54/traffic-light-7995740_1280.jpg"
                       alt="Portes et fenêtres installées"
                       className="w-full h-full object-cover"
+                      fill
                     />
                     <div className="text-black text-sm text-center text-slate-600">
                       les portes extérieures et fenêtres sont installées
@@ -1286,10 +1291,11 @@ const Raccordement = () => {
                     <div className="text-black text-lg text-center mb-0.5">
                       Non
                     </div>
-                    <img
+                    <Image
                       src="https://cdn.pixabay.com/photo/2023/05/15/18/54/traffic-light-7995740_1280.jpg"
                       alt="Portes et fenêtres non installées"
                       className="w-full h-full object-cover"
+                      fill
                     />
                     <div className="text-black text-sm text-center text-slate-600">
                       les portes et fenêtres ne sont pas installées

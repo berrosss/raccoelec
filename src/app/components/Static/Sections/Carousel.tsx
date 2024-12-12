@@ -1,22 +1,25 @@
 "use client";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 const Carousel = () => {
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
+  // Scroll the carousel to the next item
   const scrollNext = () => {
     const carousel = carouselRef.current;
     if (carousel) {
-      const childWidth = carousel.firstElementChild?.clientWidth || 0;
+      const childWidth = carousel.firstElementChild?.clientWidth || 150; // Default width fallback
       carousel.scrollBy({ left: childWidth, behavior: "smooth" });
     }
   };
 
+  // Scroll the carousel to the previous item
   const scrollPrev = () => {
     const carousel = carouselRef.current;
     if (carousel) {
-      // Scroll back the width of one child element
-      const childWidth = carousel.firstElementChild?.clientWidth || 0;
+      console.log("dasd")
+      const childWidth = carousel.firstElementChild?.clientWidth || 150; // Default width fallback
       carousel.scrollBy({ left: -childWidth, behavior: "smooth" });
     }
   };
@@ -50,22 +53,24 @@ const Carousel = () => {
         className="carousel flex overflow-x-scroll no-scrollbar whitespace-nowrap"
       >
         {[
-          "#TOP50 IFOP",
-          "#FINTECH100 2024",
-          "#NEXT40",
-          "#TOP20 LINKEDIN",
-          "#CAC40",
-          "#FW SCALE UP 2024",
-          "#RUGBY TOP14",
-          "#John Doe",
-          "#MEDIAS",
+          {name:"#compteur de chantier", link:"/raccordement-electrique"},
+           {name:"#coffret électrique", link:"/raccordement-electrique"},
+           {name:"#compteur provisoire", link:"/raccordement-electrique"},
+           {name:"#déplacement de compteur", link:"/modification-de-branchement"},
+           {name:"#branchement aérien", link:"/modification-de-branchement"},
+           {name:"#branchement sous terrain", link:"/modification-de-branchement"},
+           {name:"#compteur linky", link:"/raccordement-electrique"},
+           {name:"#contrat EDF", link:"/mise-en-service"},
+           {name:"#panneaux solaire ", link:"/mise-en-service"},
+           {name:"#compteur définitive ", link:"/raccordement-electrique"}
         ].map((item, index) => (
-          <span
+          <Link
+            href={item.link}
             key={index}
             className="bg-[#f4f5f6] py-1 px-4 mx-2 text-sm rounded hover:bg-[#dfe2e5] cursor-pointer"
           >
-            {item}
-          </span>
+            {item.name}
+          </Link>
         ))}
       </div>
 

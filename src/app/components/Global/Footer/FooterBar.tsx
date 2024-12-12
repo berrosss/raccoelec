@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const FooterBar = () => {
   return (
@@ -10,50 +11,68 @@ const FooterBar = () => {
           </span>
           {/* Scrollable image container */}
           <div className="flex space-x-5 overflow-x-auto max-w-full">
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-lepoint.webp"
               alt="Le Point"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-lemonde.webp"
               alt="Le Monde"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-lefigaro.webp"
               alt="Le Figaro"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-laprovence.webp"
               alt="La Provence"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-francesoir.webp"
               alt="France Soir"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-forbes.webp"
               alt="Forbes"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-entreprendre.webp"
               alt="Entreprendre"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-challenges.webp"
               alt="Challenges"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
-            <img
+            <Image
               src="https://raccoelec.fr/wp-content/uploads/2024/06/logo-cadreetdirigeant.webp"
               alt="Cadre & Dirigeant"
               className="h-6 opacity-75"
+              width={90}
+              height={100}
             />
           </div>
         </div>

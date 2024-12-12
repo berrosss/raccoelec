@@ -26,16 +26,30 @@ const MenuItemComponent = ({ item }: { item: MenuItem }) => {
 
   return (
     <li className="relative group no-last-gap">
-      <Link
-        href={href}
-        className={`animated-underline font-semibold text-[#4F7483] hover:text-slate-800 transition-all text-md py-[19px]`}
-      >
-        {item.label}
-        {hasChildItems(item) && (
-          //   <MdOutlineKeyboardArrowDown className="inline-block size-5 relative -top-[1px] -ml-0.5 -mr-1" />
-          <></>
-        )}
-      </Link>
+      {(item.label == "Nouveautés") ? 
+          <Link
+            href={href}
+            className={`animated-underline font-semibold text-[#dabd1f] hover:text-slate-800 transition-all text-md py-[19px]`}
+          >
+            {item.label}
+            {hasChildItems(item) && (
+              //   <MdOutlineKeyboardArrowDown className="inline-block size-5 relative -top-[1px] -ml-0.5 -mr-1" />
+              <></>
+            )}
+          </Link>
+      : 
+          <Link
+            href={href}
+            className={`animated-underline font-semibold text-[#4F7483] hover:text-slate-800 transition-all text-md py-[19px]`}
+          >
+            {item.label}
+            {hasChildItems(item) && (
+              //   <MdOutlineKeyboardArrowDown className="inline-block size-5 relative -top-[1px] -ml-0.5 -mr-1" />
+              <></>
+            )}
+          </Link>
+      }
+      
       {hasChildItems(item) && (
         <ul
           className={`absolute left-0 mt-[15px] min-w-max bg-gray-800 shadow hidden group-hover:block z-40`}

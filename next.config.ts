@@ -2,7 +2,21 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["raccoelec.fr"],
+    domains: ['localhost', 'raccoelec.fr'], 
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '',
+        pathname: 'alt="Logo"',
+      },
+    ],
+    localPatterns: [
+      {
+        pathname: '/assets/**',
+        search: '',
+      },
+    ],
   }
 };
 

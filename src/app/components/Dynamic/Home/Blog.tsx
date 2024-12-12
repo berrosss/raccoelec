@@ -1,6 +1,7 @@
 import { home_blog_articles } from "@/apis/graphql/articles";
 import Link from "next/link";
 import React from "react";
+import Image from 'next/image'
 
 const truncateContent = (content: string, maxLength: number) => {
   return content.length > maxLength
@@ -14,19 +15,19 @@ const Blog = async () => {
   return (
     <div className="mb-20">
       <h2 className="text-2xl text-zinc-950 font-bold text-center mb-10">
-        Actualités Business par Reccoelec
+        Actualités Business par Raccoelec
       </h2>
       <div className="max-w-7xl px-4 sm:px-6 lg:px-0 mx-auto">
         {posts.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div  data-aos="fade-up" className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {posts.map((post) => (
               <Link
                 href={`/${post.slug}`}
                 key={post.id}
                 className="group flex flex-col focus:outline-none"
               >
-                <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-                  <img
+                <div  className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+                  <Image
                     className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
                     src={
                       post.featuredImage?.node?.sourceUrl ||
@@ -34,6 +35,7 @@ const Blog = async () => {
                     }
                     alt={post.title}
                     title={post.featuredImage?.node.title || post.title}
+                    fill
                   />
                   <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-[#1523dc] text-white py-1.5 px-3 dark:bg-neutral-900">
                     {post.categories.nodes[0].name}

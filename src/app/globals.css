@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 .animated-underline {
   position: relative;
 }
@@ -140,18 +143,7 @@
   width: 100%;
 }
 
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-.carousel-inner {
-  display: flex;
-  transition: transform 1.5s ease;
-}
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
+
 
 @keyframes zoomOut {
   0% {
@@ -194,47 +186,6 @@
 }
 
 /* MARQUEE SLIDING CSS */
-
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-container {
-  display: flex;
-  width: max-content;
-  /* Prevent logos from wrapping to the next line */
-  white-space: nowrap;
-}
-
-.carousel-item {
-  padding: 50px;
-  display: inline-block;
-  min-width: calc(100% / var(--items-per-page));
-  box-sizing: border-box;
-  height: 120px;
-  width: 220px;
-  text-align: center;
-  display: flex;
-}
-
-.carousel-item img {
-  padding: 4px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.carousel-container {
-  animation: scroll 70s linear infinite;
-}
 
 
 /* General Row Styling */
@@ -364,4 +315,50 @@ ol {
   @apply inline;
   @apply not-italic;
   @apply mb-0;
+}
+
+
+/* Keyframes for the infinite scroll animation */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply the infinite-scroll animation to elements */
+.infinite-scroll {
+  animation: infinite-scroll 70s linear infinite;
+}
+
+/* Pause the animation when the parent container is hovered */
+.infinite-scroll-container:hover .infinite-scroll {
+  animation-play-state: paused;
+}
+
+
+
+/* Optional: Customize scrollbar (if visible) */
+.carousel {
+  margin-inline: 40px;
+}
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+.img-tabs {
+  height: 250px !important;
+  object-fit: cover !important;
 }

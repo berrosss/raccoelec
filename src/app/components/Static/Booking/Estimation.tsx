@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import Enedis from "../../../../../public/assets/enedis.svg"
 import Image from "next/image";
 
 const Estimation = () => {
@@ -286,7 +285,7 @@ const Estimation = () => {
         <div id="helloContent" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <img src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" />
+              <Image src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" fill />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -343,7 +342,7 @@ const Estimation = () => {
         <div id="simplePageContent" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <img src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" />
+              <Image src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" fill />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -435,7 +434,7 @@ const Estimation = () => {
         <div id="rue1Content" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <img src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" />
+              <Image src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" fill />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -493,7 +492,7 @@ const Estimation = () => {
         <div id="rue2Content" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <img src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" />
+              <Image src="https://www.enedis.fr/sites/default/files/pictos/2023-11/couts-delais-situation-2.svg" alt="alt" fill />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -579,7 +578,7 @@ const Estimation = () => {
         <div id="rue3Content" className="hidden mt-8">
           <div className="max-w-[500px] mx-auto">
             <div className="flex justify-center items-center mt-14 mb-14">
-              <Image src={Enedis} alt="" width={800} height={800} />
+              <Image src="/assets/enedis.svg" alt="" width={800} height={800} />
             </div>
           </div>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">

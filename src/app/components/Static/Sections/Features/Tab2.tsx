@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Define a type for the service object
 interface Service {
@@ -8,6 +9,7 @@ interface Service {
   description: string;
   buttonLink: string;
   buttonText: string;
+  animation: string;
 }
 
 const Tab1 = () => {
@@ -15,32 +17,35 @@ const Tab1 = () => {
     {
       id: 1,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/cp-enedis-et-we-love-green-inaugurent-la-saison-des-festivals-decarbones-home-desktop.jpg",
+        "/assets/services/deplacement de compteur.jpg",
       title: "Déplacement de compteur",
       description:
         "Déplacement d’un compteur Linky et/ou de son disjoncteur.",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
+      animation: "fade-right"
     },
     {
       id: 2,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/shutterstock_1342362014.jpg",
+        "/assets/services/modification de branchement.jpg",
       title: "Modification de branchement",
       description:
-        "Déplacement d’un branchement électrique (aérien ou sous-terrain).",
+        "Déplacement d\’un branchement électrique (aérien ou sous-terrain).",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
+      animation: "fade-up"
     },
     {
       id: 3,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/cp-enedis-et-we-love-green-inaugurent-la-saison-des-festivals-decarbones-home-desktop.jpg",
+        "/assets/services/supression de branchement electrique.jpg",
       title: "Suppression de branchement électrique",
       description:
-        "Retrait ou suppression d’un compteur Linky",
+        "Retrait ou suppression d\’un compteur Linky",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
+      animation: "fade-left"
     },
   ];
 
@@ -48,14 +53,15 @@ const Tab1 = () => {
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {services.map((service) => (
         <div
+        data-aos={service.animation}
           key={service.id}
           className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
           data-taos-class="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
         >
-          <img
-            className="rounded-2xl"
+          <Image
+            className="rounded-2xl img-tabs"
             src={service.imgSrc}
-            // alt={service.title}  // You may want to uncomment this and provide a meaningful alt text.
+            alt={service.title}  // You may want to uncomment this and provide a meaningful alt text.
             width={500}
             height={500}
           />

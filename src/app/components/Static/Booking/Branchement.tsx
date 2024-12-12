@@ -1043,62 +1043,7 @@ const Branchement = () => {
                 </div>
               </div>
             </form>
-            {/* <h2 className="stepper-title text-[16px] leading-[24px] font-light text-left text-[#212529] mb-10">
-              Votre terrain possède-t-il déjà un coffret électrique en limite de
-              propriété ? (La présence d&lsquo;un coffret signifie que le
-              terrain est viabilisé)?
-            </h2>
-            <div className="flex space-x-4 mb-14">
-              <label className="flex flex-col items-center cursor-pointer">
-                <div className="relative">
-                  <input
-                    type="radio"
-                    name="terrain"
-                    value="Oui, mon terrain est viabilisé"
-                    className="sr-only peer"
-                    onChange={handleRadioChange}
-                  />
-                  <div className="viab2 transition-all duration-300 w-64 h-74 rounded-lg p-3 border-2 border-gray-300 peer-checked:border-[#16a974] overflow-hidden">
-                    <div className="text-black text-sm text-center mb-0.5">
-                      Oui, mon terrain est viabilisé
-                    </div>
-                    <img
-                      src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
-                      alt="Terrain viabilisé"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="text-black text-xs text-center">
-                      Exemple de terrain viabilisé
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label className="flex flex-col items-center cursor-pointer">
-                <div className="relative">
-                  <input
-                    type="radio"
-                    name="terrain"
-                    value="Non, mon terrain n‘est pas"
-                    className="sr-only peer"
-                    onChange={handleRadioChange}
-                  />
-                  <div className="viab2 transition-all duration-300 w-64 h-74 rounded-lg p-3 border-2 border-gray-300 peer-checked:border-[#16a974] overflow-hidden">
-                    <div className="text-black text-sm text-center mb-0.5">
-                      Non, mon terrain n&lsquo;est pas
-                    </div>
-                    <img
-                      src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
-                      alt="Terrain viabilisé"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="text-black text-xs text-center">
-                      Exemple de terrain non viabilisé
-                    </div>
-                  </div>
-                </div>
-              </label>
-            </div> */}
-
+           
             <div className="p-6 bg-white rounded-lg shadow-md w-full mb-10 flex justify-center items-center flex-col">
               <div className="mb-4">
                 <p className="text-lg font-medium text-gray-800">

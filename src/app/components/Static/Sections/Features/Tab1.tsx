@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Define a type for the service object
 interface Service {
@@ -8,6 +9,7 @@ interface Service {
   description: string;
   buttonLink: string;
   buttonText: string;
+  animation: string;
 }
 
 const Tab1 = () => {
@@ -15,49 +17,52 @@ const Tab1 = () => {
     {
       id: 1,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/cp-enedis-et-we-love-green-inaugurent-la-saison-des-festivals-decarbones-home-desktop.jpg",
+        "/assets/services/viabilisation.jpg",
       title: "Viabilisation de terrain",
       description:
         "Poser un coffret en limite de votre propriété. Reliez votre terrain au réseau électrique dEnedis.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
+      animation: "fade-right"
     },
     {
       id: 2,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/shutterstock_1342362014.jpg",
+        "/assets/services/raccordement provisoire.jpg",
       title: "Raccordement provisoire",
       description:
         "Installer un compteur de chantier EDF ou un branchement provisoire.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
+      animation: "fade-up"
     },
     {
       id: 3,
       imgSrc:
-        "https://raccoelec.fr/wp-content/uploads/2024/06/cp-enedis-et-we-love-green-inaugurent-la-saison-des-festivals-decarbones-home-desktop.jpg",
+        "/assets/services/raccordemet definitive.jpg",
       title: "Raccordement définitif",
       description:
         "Demander un raccordement enedis neuf avec pose de compteur Linky.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
+      animation: "fade-left"
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div  className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {services.map((service) => (
         <div
+          data-aos={service.animation}
           key={service.id}
-          className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
-          data-taos-class="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
+          className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform "
         >
-          <img
-            className="rounded-2xl"
+          <Image
+            className="rounded-2xl img-tabs"
             src={service.imgSrc}
-            // alt={service.title}  // You may want to uncomment this and provide a meaningful alt text.
-            width={500}
-            height={500}
+            alt={service.title}  // You may want to uncomment this and provide a meaningful alt text.
+            width="500"
+            height="500"
           />
           <h3 className="text-zinc-900 text-center mt-3 text-[20px] font-[700] mb-3">
             {service.title}

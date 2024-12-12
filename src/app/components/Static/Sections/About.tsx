@@ -3,7 +3,7 @@ import { IoPlay } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div
+    <div data-aos="fade-up"
       className="mb-20 px-5 lg:px-0 max-w-7xl mx-auto duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
       data-taos-class="mt-[100px] mb-[70px] max-w-7xl mx-auto duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
     >
@@ -13,7 +13,7 @@ const About = () => {
             À propos de <span className="text-[#1523dc]">Raccoelec</span>
           </h3>
           <p className="text-zinc-500 text-lg">
-            Raccoservices est un opérateur expert et spécialiste, acteur majeur
+            Raccoelec est un opérateur expert et spécialiste, acteur majeur
             sur le marché, proposant un service dédié de conseil, d’assistance
             et d&lsquo;accompagnement à la démarche administrative et au suivi d&lsquo;une
             ou de demandes de raccordement électrique, en France, que ce soit

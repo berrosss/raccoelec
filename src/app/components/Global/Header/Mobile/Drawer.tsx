@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import RaccoLogo from "../../../../../../public/assets/logo.png";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { LuMenu } from "react-icons/lu";
@@ -23,8 +22,8 @@ const drawemenu = [
 
 const drawemenu_bottom = [
   {
-    label: "+212606060606",
-    href: "tel:+212606060606",
+    label: "0970707070",
+    href: "tel:0970707070",
     style:
       "py-2 px-4 rounded-full border-2 border-slate-300 font-medium text-slate-500 w-full",
   },
@@ -76,7 +75,7 @@ const Drawer = () => {
               >
                 <Link href="/" aria-label="Raccoelec Logo">
                   <Image
-                    src={RaccoLogo}
+                    src="/assets/logo2.png"
                     alt="Reccoelec Logo"
                     width={190}
                     height={0}

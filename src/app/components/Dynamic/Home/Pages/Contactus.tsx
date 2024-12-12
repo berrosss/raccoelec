@@ -82,30 +82,8 @@ const Contactus = () => {
     <div className="mt-36 mb-36">
       <div className="max-w-screen-xl mx-auto font-[sans-serif] relative bg-slate-50 rounded-lg py-6">
         <div className="grid lg:grid-cols-3 items-center">
-          <div className="grid sm:grid-cols-2 gap-4 z-20 relative lg:left-16 max-lg:px-4">
-            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-7 fill-blue-600"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M341.476 338.285c54.483-85.493 47.634-74.827 49.204-77.056C410.516 233.251 421 200.322 421 166 421 74.98 347.139 0 256 0 165.158 0 91 74.832 91 166c0 34.3 10.704 68.091 31.19 96.446l48.332 75.84C118.847 346.227 31 369.892 31 422c0 18.995 12.398 46.065 71.462 67.159C143.704 503.888 198.231 512 256 512c108.025 0 225-30.472 225-90 0-52.117-87.744-75.757-139.524-83.715zm-194.227-92.34a15.57 15.57 0 0 0-.517-.758C129.685 221.735 121 193.941 121 166c0-75.018 60.406-136 135-136 74.439 0 135 61.009 135 136 0 27.986-8.521 54.837-24.646 77.671-1.445 1.906 6.094-9.806-110.354 172.918L147.249 245.945zM256 482c-117.994 0-195-34.683-195-60 0-17.016 39.568-44.995 127.248-55.901l55.102 86.463a14.998 14.998 0 0 0 25.298 0l55.101-86.463C411.431 377.005 451 404.984 451 422c0 25.102-76.313 60-195 60z"
-                  data-original="#000000"
-                />
-                <path
-                  d="M256 91c-41.355 0-75 33.645-75 75s33.645 75 75 75 75-33.645 75-75-33.645-75-75-75zm0 120c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z"
-                  data-original="#000000"
-                />
-              </svg>
-              <h4 className="text-gray-800 text-base font-bold mt-4">
-                Visiter le bureau
-              </h4>
-              <p className="text-sm text-gray-600 mt-2">
-                {" "}
-                123 Main Street, City, Country
-              </p>
-            </div>
+          <div className="grid sm:grid-cols-1 gap-4 z-20 relative lg:left-16 max-lg:px-4">
+
             <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,28 +98,9 @@ const Contactus = () => {
               <h4 className="text-gray-800 text-base font-bold mt-4">
                 Appelez-nous
               </h4>
-              <p className="text-sm text-gray-600 mt-2">+212 7 07 02 99 91</p>
+              <p className="text-sm text-gray-600 mt-2">09 70 70 70 70</p>
             </div>
-            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-7 fill-blue-600"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
-                  data-original="#000000"
-                />
-                <path
-                  d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zm-8 4H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
-                  data-original="#000000"
-                />
-              </svg>
-              <h4 className="text-gray-800 text-base font-bold mt-4">
-                Clavardez avec nous
-              </h4>
-              <p className="text-sm text-gray-600 mt-2">info@raccoelec.fr</p>
-            </div>
+
             <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +115,7 @@ const Contactus = () => {
               <h4 className="text-gray-800 text-base font-bold mt-4">Fax</h4>
               <p className="text-sm text-gray-600 mt-2">+212 5 24 48 99 91</p>
             </div>
+
           </div>
           <div className="lg:col-span-2 bg-white shadow-lg rounded-xl sm:p-10 p-4 z-10 max-lg:-order-1 max-lg:mb-8">
             <div className="max-w-xl mx-auto space-y-3">
