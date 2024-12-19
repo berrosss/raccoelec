@@ -247,7 +247,7 @@ const aproposnous = () => {
                     </div>
                     <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter vos démarches de raccordement électrique</h3>
                     <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
-                    Notre plateforme facilite vos demandes de raccordement électrique, qu&apos;il s&apos;agisse d&apos;Enedis ou d'une ELD. 
+                    Notre plateforme facilite vos demandes de raccordement électrique, qu&apos;il s&apos;agisse d&apos;Enedis ou d&apos;une ELD. 
                     </p>
                     <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
                     Nous vous accompagnons à chaque étape, de la constitution du dossier jusqu&apos;à la mise en service. Grâce à notre expertise, nous assurons un suivi rigoureux pour un traitement rapide et efficace. En collaboration avec les gestionnaires de réseau et fournisseurs d&apos;énergie, nous garantissons une transition fluide. Bénéficiez d&apos;une assistance complète pour le raccordement et la signature de votre contrat, en toute simplicité.
