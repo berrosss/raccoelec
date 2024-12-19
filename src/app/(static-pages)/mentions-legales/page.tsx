@@ -17,7 +17,7 @@ const mentionslegales = () => {
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Assistance personnalisée</h2>
           <p>
-            Nous proposons une assistance sur mesure pour répondre spécifiquement à vos besoins en matière de raccordement électrique. Nous prenons en charge l’ensemble des démarches administratives liées à votre raccordement, afin de vous offrir une expérience sereine et sans stress. Nous assurons un suivi régulier de votre dossier, vous tenant informé à chaque étape de votre demande. Notre objectif : un raccordement rapide et efficace pour votre bâtiment.
+            Nous proposons une assistance sur mesure pour répondre spécifiquement à vos besoins en matière de raccordement électrique. Nous prenons en charge l&apos;ensemble des démarches administratives liées à votre raccordement, afin de vous offrir une expérience sereine et sans stress. Nous assurons un suivi régulier de votre dossier, vous tenant informé à chaque étape de votre demande. Notre objectif : un raccordement rapide et efficace pour votre bâtiment.
           </p>
         </section>
 
@@ -43,7 +43,7 @@ const mentionslegales = () => {
 
         <section>
           <h2 className="text-xl font-semibold mb-2">Article 3 – Hébergement du Site</h2>
-          <p>L’hébergement du site est assuré par la société <strong>Hostinger</strong>, dont le siège social est situé à :</p>
+          <p>L&apos;hébergement du site est assuré par la société <strong>Hostinger</strong>, dont le siège social est situé à :</p>
           <p><strong>Jonavos g. 60C, LT-44192 Kaunas, République de Lituanie.</strong></p>
         </section>
 

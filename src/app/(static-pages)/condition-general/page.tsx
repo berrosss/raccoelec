@@ -24,37 +24,37 @@ const conditiongeneral = () => {
 
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Services</h2>
-          <p>Le site propose des services de conseil et d’assistance pour les démarches de raccordement au réseau d’électricité (les « Services »). La Société s’efforce de fournir des descriptions aussi précises que possible des Services. Cependant, elle ne garantit pas que les descriptions sont complètes, à jour ou exemptes d’erreurs.</p>
+          <p>Le site propose des services de conseil et d&apos;assistance pour les démarches de raccordement au réseau d&apos;électricité (les « Services »). La Société s&apos;efforce de fournir des descriptions aussi précises que possible des Services. Cependant, elle ne garantit pas que les descriptions sont complètes, à jour ou exemptes d&apos;erreurs.</p>
         </section>
 
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Commandes</h2>
-          <p>Le Client peut passer commande sur le site en suivant le processus de commande en ligne. Toute commande passée constitue une offre d’achat des Services conformément aux présentes Conditions Générales. La Société se réserve le droit d’accepter ou de refuser une commande pour des raisons légitimes, notamment en cas de problème de paiement, de suspicion de fraude ou de demande inhabituelle.</p>
+          <p>Le Client peut passer commande sur le site en suivant le processus de commande en ligne. Toute commande passée constitue une offre d&apos;achat des Services conformément aux présentes Conditions Générales. La Société se réserve le droit d&apos;accepter ou de refuser une commande pour des raisons légitimes, notamment en cas de problème de paiement, de suspicion de fraude ou de demande inhabituelle.</p>
         </section>
 
         <section  className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Prix et Paiement</h2>
-          <p>Les prix des Services sont indiqués en euros et sont susceptibles de modification à tout moment. Les prix applicables sont ceux en vigueur au moment de la commande. Le paiement des Services peut être effectué par carte bancaire via une plateforme de paiement sécurisée. Le Client garantit qu’il est pleinement autorisé à utiliser la carte de paiement pour régler sa commande.</p>
+          <p>Les prix des Services sont indiqués en euros et sont susceptibles de modification à tout moment. Les prix applicables sont ceux en vigueur au moment de la commande. Le paiement des Services peut être effectué par carte bancaire via une plateforme de paiement sécurisée. Le Client garantit qu&apos;il est pleinement autorisé à utiliser la carte de paiement pour régler sa commande.</p>
         </section>
 
         <section  className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Livraison des Services</h2>
-          <p>Les Services sont fournis par voie électronique via le site ou par d’autres moyens convenus avec le Client. La Société s’engage à fournir les Services dans les meilleurs délais suivant la réception du paiement.</p>
+          <p>Les Services sont fournis par voie électronique via le site ou par d&apos;autres moyens convenus avec le Client. La Société s&apos;engage à fournir les Services dans les meilleurs délais suivant la réception du paiement.</p>
         </section>
 
         <section  className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Responsabilité</h2>
-          <p>La Société s’engage à fournir les Services avec diligence et conformément aux règles de l’art. Cependant, elle ne saurait être tenue responsable en cas de dommages indirects, imprévisibles ou non imputables à la Société, tels que la perte de profit ou la perte de données.</p>
+          <p>La Société s&apos;engage à fournir les Services avec diligence et conformément aux règles de l&apos;art. Cependant, elle ne saurait être tenue responsable en cas de dommages indirects, imprévisibles ou non imputables à la Société, tels que la perte de profit ou la perte de données.</p>
         </section>
 
         <section  className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Protection des Données Personnelles</h2>
-          <p>Les données personnelles collectées sur le site sont traitées conformément à la politique de confidentialité de la Société. Le Client dispose d’un droit d’accès, de rectification et de suppression des données le concernant, qu’il peut exercer en contactant la Société à l’adresse suivante : <Link href="mailto:serviceclient@raccoelec.fr?_rsc=1q4xj" className="text-[#203cdb]">serviceclient@raccoelec.fr</Link>.</p>
+          <p>Les données personnelles collectées sur le site sont traitées conformément à la politique de confidentialité de la Société. Le Client dispose d&apos;un droit d&apos;accès, de rectification et de suppression des données le concernant, qu&apos;il peut exercer en contactant la Société à l&apos;adresse suivante : <Link href="mailto:serviceclient@raccoelec.fr?_rsc=1q4xj" className="text-[#203cdb]">serviceclient@raccoelec.fr</Link>.</p>
         </section>
 
         <section  className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Droit Applicable et Litiges</h2>
-          <p>Les présentes Conditions Générales sont régies par le droit français. En cas de litige, les parties s’efforceront de trouver une solution amiable avant de recourir aux tribunaux compétents.</p>
+          <p>Les présentes Conditions Générales sont régies par le droit français. En cas de litige, les parties s&apos;efforceront de trouver une solution amiable avant de recourir aux tribunaux compétents.</p>
         </section>
 
       </div>

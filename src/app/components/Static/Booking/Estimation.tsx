@@ -110,19 +110,19 @@ const Estimation = () => {
     <div className="max-w-5xl mx-auto py-20 mt-16 px-5 lg:px-0">
       <div className="flex justify-center items-center flex-col mb-20">
         <h2 className="text-3xl leading-tight font-bold text-[#96cd32] text-center mb-6 max-w-[600px]">
-          Informations générales sur le prix et les délais d’un raccordement
+          Informations générales sur le prix et les délais d&apos;un raccordement
         </h2>
       </div>
       <div>
         <p className="text-zinc-950">
-          Le <strong>prix</strong> et les <strong>délais</strong> d’un
+          Le <strong>prix</strong> et les <strong>délais</strong> d&apos;un
           raccordement en consommation dépendent de la solution technique qui
           est fonction de :
         </p>
         <ul className="tempslist mt-5 mb-16">
           <li>
             la distance entre l&lsquo;installation électrique de votre local et
-            le réseau de distribution d’électricité ;
+            le réseau de distribution d&apos;électricité ;
           </li>
           <li>la puissance électrique demandée.</li>
         </ul>
@@ -132,7 +132,7 @@ const Estimation = () => {
         <p className="text-zinc-950 font-semibold mb-3">
           Les informations mentionnées visent à vous fournir des repères
           simplifiés et préalables à une demande raccordement en consommation.
-          Elles n’ont pas valeur d’engagement.
+          Elles n&apos;ont pas valeur d&apos;engagement.
         </p>
       </div>
       <div className="p-10 bg-[#e5ebed]" id="step1">
@@ -173,7 +173,7 @@ const Estimation = () => {
             2- Votre terrain est-il déjà viabilisé ?
           </h4>
           <p className="text-xs text-zinc-900 mb-3">
-            (Présence d’un coffret électrique en limite de votre terrain)
+            (Présence d&apos;un coffret électrique en limite de votre terrain)
           </p>
           <form
             id="subForm"
@@ -205,9 +205,9 @@ const Estimation = () => {
             votre terrain ?
           </h4>
           <p className="text-xs mb-5 text-zinc-800">
-            (si votre terrain a un caractère spécifique, tel qu’un terrain sans
-            accès direct à la voie publique, sachez que l’estimation proposée
-            ici n’est pas adaptée. Une étude précise par raccoelec sera
+            (si votre terrain a un caractère spécifique, tel qu&apos;un terrain sans
+            accès direct à la voie publique, sachez que l&apos;estimation proposée
+            ici n&apos;est pas adaptée. Une étude précise par raccoelec sera
             nécessaire)
           </p>
           <form
@@ -244,8 +244,8 @@ const Estimation = () => {
                   Ma rue est partiellement desservie en électricité
                 </p>
                 <p className="!text-sm">
-                  (j’ai un seul voisin qui dispose de l’électricité, le réseau
-                  est présent dans ma rue mais à priori il ne vient pas jusqu’à
+                  (j&apos;ai un seul voisin qui dispose de l&apos;électricité, le réseau
+                  est présent dans ma rue mais à priori il ne vient pas jusqu&apos;à
                   mon terrain)
                 </p>
               </div>
@@ -259,7 +259,7 @@ const Estimation = () => {
               />
               <div className="flex justify-start items-start flex-col">
                 <p className="font-medium text-xl text-black">
-                  Ma rue n’est pas desservie en électricité
+                  Ma rue n&apos;est pas desservie en électricité
                 </p>
               </div>
             </label>
@@ -292,7 +292,7 @@ const Estimation = () => {
             Solution technique
           </h3>
           <p className="text-zinc-950 mb-6">
-            La solution technique est un branchement raccordant l’installation
+            La solution technique est un branchement raccordant l&apos;installation
             électrique de votre local au coffret électrique de votre terrain
             déjà viabilisé.
           </p>
@@ -315,7 +315,7 @@ const Estimation = () => {
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-4">
-              l’établissement du devis (estimé à 2 semaines) ;
+              l&apos;établissement du devis (estimé à 2 semaines) ;
             </li>
             <li>
               la réalisation des travaux (estimée entre 4 et 6 semaines) ;
@@ -357,16 +357,16 @@ const Estimation = () => {
               Si la puissance souhaitée est disponible :
               <br />
               la solution technique est un branchement, voire une extension du
-              réseau de distribution d’électricité en complément du branchement,
+              réseau de distribution d&apos;électricité en complément du branchement,
               en fonction de la distance entre l&lsquo;installation électrique
-              de votre local et le réseau de distribution d’électricité.
+              de votre local et le réseau de distribution d&apos;électricité.
             </li>
             <li>
-              Si la puissance souhaitée n’est pas disponible :
+              Si la puissance souhaitée n&apos;est pas disponible :
               <br />
               la solution technique est le renforcement du réseau ou
-              l’implantation d’un nouveau poste de distribution d’électricité
-              pour augmenter la puissance disponible sur le réseau. Il s’agit de
+              l&apos;implantation d&apos;un nouveau poste de distribution d&apos;électricité
+              pour augmenter la puissance disponible sur le réseau. Il s&apos;agit de
               travaux significatifs impliquant des études approfondies.
             </li>
           </ul>
@@ -374,7 +374,7 @@ const Estimation = () => {
             Prix moyen
           </h3>
           <p className="text-zinc-950 max-w-[550px] mb-10">
-          Le tarif de la prestation est 129,8 € avec un prix est variable en fonction de l’ampleur des travaux à
+          Le tarif de la prestation est 129,8 € avec un prix est variable en fonction de l&apos;ampleur des travaux à
             réaliser. Une étude technique et financière par Enedis est
             nécessaire.
           </p>
@@ -390,7 +390,7 @@ const Estimation = () => {
             et travaux dans des délais compatibles :
           </p>
           <ul className="tempslist mt-5 mb-10">
-            <li>l’établissement du devis (estimé à 6 semaines) ;</li>
+            <li>l&apos;établissement du devis (estimé à 6 semaines) ;</li>
             <li>
               la réalisation des travaux (estimée entre 8 et 16 semaines) ;
             </li>
@@ -400,7 +400,7 @@ const Estimation = () => {
             </li>
           </ul>
           <p className="text-zinc-950">
-            Si la puissance souhaitée n’est pas disponible sur le réseau, le
+            Si la puissance souhaitée n&apos;est pas disponible sur le réseau, le
             délai minimum est estimé entre 6 et 9 mois (selon la solution
             technique retenue).
             <br />
@@ -408,7 +408,7 @@ const Estimation = () => {
             et travaux dans des délais compatibles :
           </p>
           <ul className="tempslist mt-5 mb-10">
-            <li>l’établissement du devis (estimé à 6 semaines) ;</li>
+            <li>l&apos;établissement du devis (estimé à 6 semaines) ;</li>
             <li>
               la réalisation des travaux (estimée entre 8 et 16 semaines) ;
             </li>
@@ -441,9 +441,9 @@ const Estimation = () => {
             Solution technique
           </h3>
           <p className="text-zinc-950 mb-6">
-            La solution technique est un branchement raccordant l’installation
-            électrique de votre local au réseau de distribution d’électricité
-            avec implantation d’un coffret électrique en limite de votre
+            La solution technique est un branchement raccordant l&apos;installation
+            électrique de votre local au réseau de distribution d&apos;électricité
+            avec implantation d&apos;un coffret électrique en limite de votre
             terrain.
           </p>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -465,7 +465,7 @@ const Estimation = () => {
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-4">
-              l’établissement du devis (estimé à 2 semaines) ;
+              l&apos;établissement du devis (estimé à 2 semaines) ;
             </li>
             <li>
               la réalisation des travaux (estimée entre 6 et 8 semaines) ;
@@ -501,13 +501,13 @@ const Estimation = () => {
           <p className="text-zinc-950 mb-3">
             Si votre futur local est proche du réseau de distribution
             d&lsquo;électricité, la solution technique est un branchement
-            raccordant l’installation électrique de votre local au réseau de
-            distribution d’électricité.
+            raccordant l&apos;installation électrique de votre local au réseau de
+            distribution d&apos;électricité.
           </p>
           <p className="text-zinc-950 mb-3">
             Si votre futur local est éloigné du réseau de distribution
             d&lsquo;électricité, la solution technique nécessite la construction
-            d’une extension du réseau de distribution d’électricité, en
+            d&apos;une extension du réseau de distribution d&apos;électricité, en
             complément de votre branchement.
           </p>
           <p className="text-zinc-950 mb-3">
@@ -531,11 +531,11 @@ const Estimation = () => {
               en moyenne à 1600 € TTC ;
             </li>
             <li>
-              une part variable qui est fonction de la longueur de l’extension
-              du réseau de distribution d’électricité à construire (selon le
+              une part variable qui est fonction de la longueur de l&apos;extension
+              du réseau de distribution d&apos;électricité à construire (selon le
               barème de facturation en vigueur). En général, cette part peut
               être prise en charge par votre mairie dans le cadre de la
-              délivrance de votre autorisation d’urbanisme.
+              délivrance de votre autorisation d&apos;urbanisme.
             </li>
           </ul>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -543,7 +543,7 @@ const Estimation = () => {
           </h3>
           <p className="text-zinc-950 mb-4">
             Le délai minimum est estimé à 3 mois pour un branchement, ou à 6
-            mois pour une extension du réseau de distribution d’électricité.
+            mois pour une extension du réseau de distribution d&apos;électricité.
           </p>
           <p className="text-zinc-950 mb-6">
             Il prend en compte, sous condition de réalisation de vos démarches
@@ -551,7 +551,7 @@ const Estimation = () => {
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-4">
-              l’établissement du devis (estimé entre 2 et 6 semaines) ;
+              l&apos;établissement du devis (estimé entre 2 et 6 semaines) ;
             </li>
             <li>
               la réalisation des travaux (estimée entre 6 et 18 semaines) ;
@@ -585,10 +585,10 @@ const Estimation = () => {
             Solution technique
           </h3>
           <p className="text-zinc-950 mb-3">
-            La solution technique nécessite la construction d’une extension du
-            réseau de distribution d’électricité en complément de votre
-            branchement raccordant l’installation électrique de votre local au
-            réseau de distribution d’électricité. Un coffret électrique sera
+            La solution technique nécessite la construction d&apos;une extension du
+            réseau de distribution d&apos;électricité en complément de votre
+            branchement raccordant l&apos;installation électrique de votre local au
+            réseau de distribution d&apos;électricité. Un coffret électrique sera
             implanté en limite de votre terrain.
           </p>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -603,11 +603,11 @@ const Estimation = () => {
               en moyenne à 1600 € TTC ;
             </li>
             <li>
-              une part variable qui est fonction de la longueur de l’extension
-              du réseau de distribution d’électricité à construire (selon le
+              une part variable qui est fonction de la longueur de l&apos;extension
+              du réseau de distribution d&apos;électricité à construire (selon le
               barème de facturation en vigueur). En général, cette part peut
               être prise en charge par votre mairie dans le cadre de la
-              délivrance de votre autorisation d’urbanisme.
+              délivrance de votre autorisation d&apos;urbanisme.
             </li>
           </ul>
           <h3 className="text-2xl leading-tight font-bold text-[#96cd32] text-left mb-4">
@@ -622,7 +622,7 @@ const Estimation = () => {
           </p>
           <ul className="tempslist mt-5 mb-10">
             <li className="mb-4">
-              l’établissement du devis (estimé à 6 semaines) ;
+              l&apos;établissement du devis (estimé à 6 semaines) ;
             </li>
             <li>
               la réalisation des travaux (estimée entre 14 et 18 semaines) ;

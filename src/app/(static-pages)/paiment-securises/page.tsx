@@ -22,14 +22,14 @@ const paimentsecurises = () => {
           <p>De plus, les informations de votre carte de crédit sont directement transmises au TPV (Terminal de Point de Vente) de la banque et ne sont enregistrées dans aucune base de données.</p><br />
           <p>Afin de renforcer la sécurité pour les propriétaires de cartes de crédit, nous avons intégré un système de paiement sécurisé appelé SEC (Secure Electronic Commerce). Ainsi, si vous</p><br />
           <p>possédez une carte de crédit « sécurisée », vous pourrez effectuer des paiements en toute confiance sur notre site avec votre carte VISA ou MASTERCARD.</p><br />
-          <p>Si vous ne possédez pas une telle carte de crédit, Raccoelec n’acceptera le paiement par carte VISA ou MASTERCARD que si l’ancienneté et la fiabilité du client sont démontrées.</p><br />
-          <p>Dans les deux cas, pour tout paiement par carte VISA ou MASTERCARD, les informations suivantes seront requises afin d’assurer des transactions sécurisées </p><br />
+          <p>Si vous ne possédez pas une telle carte de crédit, Raccoelec n&apos;acceptera le paiement par carte VISA ou MASTERCARD que si l&apos;ancienneté et la fiabilité du client sont démontrées.</p><br />
+          <p>Dans les deux cas, pour tout paiement par carte VISA ou MASTERCARD, les informations suivantes seront requises afin d&apos;assurer des transactions sécurisées </p><br />
           <ul className="list-disc ml-16">
             <li>Le numéro de la carte</li>
-            <li>La date d’expiration</li>
+            <li>La date d&apos;expiration</li>
             <li>Le code de vérification à trois chiffres indiqué au dos de la carte</li>
           </ul> <br />
-          <p><strong>Important</strong> : La fraude par carte de crédit est un délit. Raccoelec se réserve le droit d’entreprendre des actions en justice contre toute personne effectuant une transaction frauduleuse sur notre site web.</p>
+          <p><strong>Important</strong> : La fraude par carte de crédit est un délit. Raccoelec se réserve le droit d&apos;entreprendre des actions en justice contre toute personne effectuant une transaction frauduleuse sur notre site web.</p>
         </section>
 
       </div>

@@ -67,9 +67,9 @@ const Carousel = () => {
           <Link
             href={item.link}
             key={index}
-            className="bg-[#f4f5f6] py-1 px-4 mx-2 text-sm rounded hover:bg-[#dfe2e5] cursor-pointer"
+            className="w-full mt-1 px-2 py-3 text-[#1623dc] focus:outline-none  "
           >
-            {item.name}
+            <p className="bg-[#e1e4ff] p-1 px-4 rounded-sm text-xs">{item.name}</p>
           </Link>
         ))}
       </div>

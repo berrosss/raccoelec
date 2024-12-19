@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const menuItems = [
   {
-    label: "Raccordement definitive",
+    label: "Raccordement définitif",
     href: "/raccordement-electrique",
     icon: (
       <MdOutlineChevronRight className="size-6 relative -top-[1px] inline-block text-[#18a974]" />
@@ -182,7 +182,7 @@ const Footer = () => {
                   <li key={index} className="flex justify-start items-center">
                     <Link
                       href={item.href}
-                      className="text-white text-[11px] uppercase hover:text-[#18a974] transition-all"
+                      className="text-white text-[11px] hover:text-[#18a974] transition-all"
                     >
                       {item.icon}
                       {item.label}
@@ -198,7 +198,7 @@ const Footer = () => {
                   <li key={index} className="flex justify-start items-center">
                     <Link
                       href={item.href}
-                      className="text-white text-[11px] uppercase hover:text-[#18a974] transition-all"
+                      className="text-white text-[11px]  hover:text-[#18a974] transition-all"
                     >
                       {item.icon}
                       {item.label}
@@ -214,7 +214,7 @@ const Footer = () => {
                   <li key={index} className="flex justify-start items-center">
                     <Link
                       href={item!.href}
-                      className="text-white text-[11px] uppercase hover:text-[#18a974] transition-all"
+                      className="text-white text-[11px]  hover:text-[#18a974] transition-all"
                     >
                       {item!.icon}
                       {item!.label}

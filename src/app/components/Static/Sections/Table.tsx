@@ -87,7 +87,7 @@ const Table = () => {
                 <th scope="col" className="p-4"></th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                   Entreprises
                   <div className="text-xs text-green-300 mb-1">au total</div>
@@ -124,7 +124,7 @@ const Table = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                   Creation
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
@@ -161,7 +161,7 @@ const Table = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                   Dpts
                   <div className="text-xs text-green-300 mb-1">au total</div>
@@ -198,7 +198,7 @@ const Table = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                   Chiffre D&lsquo;affaires
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
@@ -235,7 +235,7 @@ const Table = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                 &nbsp; Resultat Net &nbsp;
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
@@ -272,7 +272,7 @@ const Table = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-3 text-center text-sm tracking-wider"
+                  className="px-6 py-2 text-center text-xs tracking-wider"
                 >
                   Delai de paiement
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
@@ -311,15 +311,15 @@ const Table = () => {
             </thead>
             <tbody>
               {shuffledData.map((item, index) => (
-                <tr className=" bg-[#ffffff] fade-in " key={item.id} >
-                  <td className="border-none w-4 p-4 text-center">
+                <tr className=" bg-[#ffffff] fade-in border-b-2 border-gray-300 " key={item.id} >
+                  <td className="border-b-2 border-gray-300 w-4 p-2 text-center">
                     <div className="w-6 h-6 bg-[#203edc] rounded-full flex justify-center items-center text-white text-center">
                       {index + 1}
                     </div>
                   </td>
-                  <th
+                  <td
                     scope="row"
-                    className="border-none flex items-center px-6 py-6 whitespace-nowrap dark:text-white"
+                    className="flex items-center px-6 py-6 whitespace-nowrap dark:text-white"
                   >
                     <Image
                       decoding="async"
@@ -330,32 +330,32 @@ const Table = () => {
                       width={100}
                     />
                     <div className="ps-3">
-                      <div className=" text-gray-400 text-base font-semibold uppercase truncate w-full max-w-xs">
+                      <div className="text-black text-xs font-semibold uppercase truncate w-full max-w-xs">
                         {item.name}
                       </div>
                     </div>
-                  </th>
-                  <td className="border-none  px-6 py-4">
+                  </td>
+                  <td className="  px-6 py-2">
                     <div className="flex items-center justify-center flex-col">
-                      <div className="text-gray-400 text-base font-semibold">
+                      <div className="text-black text-xs font-semibold">
                         {item.date}
                       </div>
-                      <div className="text-gray-400 text-sm font-normal">
+                      <div className="text-black text-xs font-normal">
                         {item.age}
                       </div>
                     </div>
                   </td>
-                  <td className="border-none  px-6 py-4">
+                  <td className="  px-6 py-2">
                     <div className="flex items-center justify-center flex-col">
-                      <div className="text-gray-400 text-base font-semibold">
+                      <div className="text-black text-xs font-semibold">
                       {item.dpts}
                       </div>
-                      <div className="text-gray-400 text-sm font-normal">FR</div>
+                      <div className="text-black text-xs font-normal">Fr</div>
                     </div>
                   </td>
-                  <td className=" border-none px-6 py-4">
+                  <td className=" px-6 py-2">
                     <div className="flex items-center justify-center flex-col">
-                      <div className="text-gray-400 text-base font-semibold">
+                      <div className="text-black text-xs font-semibold">
                       {item.chifreAffaire} md€
                         {(item.svg1) ? <svg
                             viewBox="0 0 24 24"
@@ -401,14 +401,14 @@ const Table = () => {
                           </g>
                         </svg>}
                       </div>
-                      <div className="text-gray-400 text-sm font-normal">
+                      <div className="text-black text-xs font-normal">
                       {item.dateChifreAffaire}
                       </div>
                     </div>
                   </td>
-                  <td className=" border-none px-6 py-4">
+                  <td className=" px-6 py-2">
                     <div className="flex items-center justify-center flex-col">
-                      <div className="text-gray-400 text-base font-semibold">
+                      <div className="text-black text-xs font-semibold">
                       {item.resultNet} md€
                       {(item.svg2) ? <svg
                           viewBox="0 0 24 24"
@@ -454,17 +454,17 @@ const Table = () => {
                             </g>
                           </svg>}
                       </div>
-                      <div className="text-gray-400 text-sm font-normal">
+                      <div className="text-black text-xs font-normal">
                       {item.dateChifreAffaire}
                       </div>
                     </div>
                   </td>
-                  <td className="border-none  px-6 py-4">
+                  <td className="  px-6 py-2">
                     <div className="flex items-center justify-center flex-col">
-                      <div className={`text-white text-base font-semibold ${item.colorDelaiPaiment} px-3 rounded`}>
+                      <div className={`text-white text-xs font-semibold ${item.colorDelaiPaiment} px-3 rounded`}>
                       {item.delaiPaiment} Jrs
                       </div>
-                      <div className="text-gray-400 text-sm font-normal">
+                      <div className="text-black text-xs font-normal">
                         {item.dateDelaiPaiment}
                       </div>
                     </div>

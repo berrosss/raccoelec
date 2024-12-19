@@ -101,23 +101,23 @@ const Hero = () => {
                 <div className="flex items-center space-x-2">
                   <div className="bg-green-100 rounded-full p-1">
                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
                   </div>
-                  <span className="text-white">Mise à jour quotidienne</span>
+                  <span className="text-white">Experts de confiance</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="bg-green-100 rounded-full p-1">
                   <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
                   </div>
-                  <span className="text-white">Sources officielles</span>
+                  <span className="text-white">Experts de confiance</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="bg-green-100 rounded-full p-1">
                   <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
                   </div>
                   <span className="text-white">Support 7j/7</span>

@@ -502,7 +502,7 @@ const Raccordement = () => {
             type="radio"
             id="radio4"
             name="beneficiary"
-            value="Un particulier"
+            value=""
             className="hidden peer"
             onChange={handleRadioChange}
             required
@@ -587,7 +587,7 @@ const Raccordement = () => {
               placeholder="Nom"
               id="first_name"
               name="last_name"
-              className="w-full mt-1 px-4 py-2 border rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-600"
+              className="w-full mt-1 px-4 py-3 border-2 border-[#acabab] focus:outline-none focus:ring-1 focus:ring-blue-600"
               onChange={handleChange}
             />
             {errors.last_name && (
@@ -606,7 +606,7 @@ const Raccordement = () => {
               placeholder="Prénom"
               id="last_name"
               name="first_name"
-              className="w-full mt-1 px-4 py-2 border rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-600"
+              className="w-full mt-1 px-4 py-3 border-2 border-[#acabab] focus:outline-none focus:ring-1 focus:ring-blue-600"
               onChange={handleChange}
             />
             {errors.first_name && (
@@ -625,7 +625,7 @@ const Raccordement = () => {
               placeholder="Email"
               id="email"
               name="email"
-              className="w-full mt-1 px-4 py-2 border rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-600"
+              className="w-full mt-1 px-4 py-3 border-2 border-[#acabab] focus:outline-none focus:ring-1 focus:ring-blue-600"
               onChange={handleChange}
             />
             {errors.email && (
@@ -644,7 +644,7 @@ const Raccordement = () => {
               placeholder="Téléphone"
               id="phone"
               name="phone"
-              className="w-full mt-1 px-4 py-2 border rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-600"
+              className="w-full mt-1 px-4 py-3 border-2 border-[#acabab] focus:outline-none focus:ring-1 focus:ring-blue-600"
               onChange={handleChange}
             />
             {errors.phone && (
@@ -1111,7 +1111,7 @@ const Raccordement = () => {
                       Oui, mon terrain est viabilisé
                     </div>
                     <Image
-                      src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
+                      src="/assets/formulaire/home_garden.jpg"
                       alt="Terrain viabilisé"
                       className="w-full h-full object-cover"
                       fill
@@ -1137,7 +1137,7 @@ const Raccordement = () => {
                       Non, mon terrain n&lsquo;est pas
                     </div>
                     <Image
-                      src="https://www.bhg.com/thmb/rpSF7vUHwTf0FF-6JAIC_m7gAW0=/1280x0/filters:no_upscale():strip_icc()/unpainted-garden-shed-with-window-boxes-038b8742-c10f66637cee44f1b6d081180423ed79.jpg"
+                      src="/assets/formulaire/home_garden.jpg"
                       alt="Terrain viabilisé"
                       className="w-full h-full object-cover"
                       fill

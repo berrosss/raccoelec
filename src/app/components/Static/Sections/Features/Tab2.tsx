@@ -20,7 +20,7 @@ const Tab1 = () => {
         "/assets/services/deplacement de compteur.jpg",
       title: "Déplacement de compteur",
       description:
-        "Déplacement d’un compteur Linky et/ou de son disjoncteur.",
+        "Déplacement d&apos;un compteur Linky et/ou de son disjoncteur.",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
       animation: "fade-right"
@@ -31,7 +31,7 @@ const Tab1 = () => {
         "/assets/services/modification de branchement.jpg",
       title: "Modification de branchement",
       description:
-        "Déplacement d\’un branchement électrique (aérien ou sous-terrain).",
+        "Déplacement d\&apos;un branchement électrique (aérien ou sous-terrain).",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
       animation: "fade-up"
@@ -42,7 +42,7 @@ const Tab1 = () => {
         "/assets/services/supression de branchement electrique.jpg",
       title: "Suppression de branchement électrique",
       description:
-        "Retrait ou suppression d\’un compteur Linky",
+        "Retrait ou suppression d\&apos;un compteur Linky",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
       animation: "fade-left"

@@ -14,7 +14,7 @@ const About = () => {
           </h3>
           <p className="text-zinc-500 text-lg">
             Raccoelec est un opérateur expert et spécialiste, acteur majeur
-            sur le marché, proposant un service dédié de conseil, d’assistance
+            sur le marché, proposant un service dédié de conseil, d&apos;assistance
             et d&lsquo;accompagnement à la démarche administrative et au suivi d&lsquo;une
             ou de demandes de raccordement électrique, en France, que ce soit
             pour des particuliers ou des professionnels.

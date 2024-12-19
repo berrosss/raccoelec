@@ -18,32 +18,32 @@ const Timeline = () => {
   // Timeline Items
   const timelineItems = [
     {
-      title: "Étude de la Demande",
-      description: "Nos juristes repondent a vos questions grâce à l'assistance Legalstart, vos statuts sont générés et vérifiés par nos équipes.",
+      title: "Étude de votre Demande",
+      description: "Nos experts analysent votre demande de raccordement et assurent sa conformité, vous offrant un accompagnement personnalisé à chaque étape.",
       icon: IoMdPaper,
       isCompleted: true,
     },
     {
-      title: "Dépôt du Dossier",
-      description: "Vous constituez votre dossier avec l'aide de nos équipes.",
+      title: "Dépôt du dossier ",
+      description: "Vous constituez votre dossier avec l'aide de nos équipes. ",
       icon: IoFolderOpenOutline,
       isCompleted: true,
     },
     {
-      title: "Réalisation des Travaux",
-      description: "Nos juristes repondent a vos questions grâce à l'assistance Legalstart, vos statuts sont générés et vérifiés par nos équipes.",
-      icon: FaRegPenToSquare,
-      isCompleted: true,
-    },
-    {
       title: "Appel d'un Expert Enedis",
-      description: "Vous constituez votre dossier avec l'aide de nos équipes.",
+      description: "Nous organisons un rendez-vous dans les meilleurs délais avec un expert du gestionnaire de réseau pour accélérer votre démarche de raccordement et garantir une prise en charge rapide de votre projet.",
       icon: BiSupport,
       isCompleted: true,
     },
     {
+      title: "Réalisation des Travaux",
+      description : "Nous vérifions avec le gestionnaire si des informations ou documents supplémentaires sont nécessaires afin d'accélérer la réalisation du raccordement et garantir un déroulement rapide et efficace.",
+      icon: FaRegPenToSquare,
+      isCompleted: true,
+    },
+    {
       title: "Mise en Service",
-      description: "Nos juristes repondent a vos questions grâce à l'assistance Legalstart, vos statuts sont générés et vérifiés par nos équipes.",
+      description: "représente la dernière étape avant que vous ne puissiez signer votre contrat avec le fournisseur d&apos;électricité de votre choix.",
       icon: LuFileCheck2,
       isCompleted: false,
     },

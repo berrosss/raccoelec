@@ -17,15 +17,15 @@ const aproposnous = () => {
                         Quand la transparence <span className="text-[#203edc]"><br></br>éclaire la performance</span>
                     </h1>
                     <p className="mt-6 text-gray-600">
-                        Chez Raccoelec, nous sommes convaincus qu’un décideur mieux informé est une entreprise moins exposée aux risques.
+                    Chez Raccoelec, nous sommes convaincus qu&apos;un client bien informé réduit les risques et optimise ses démarches.
                     </p>
                 </div>
             </div>
         </section>
 
         <section className="max-w-7xl mx-auto my-16 p-8">
-            <div className="left-[15px] mb-8 text-[#283136] text-2xl font-extrabold font-['Open Sans'] leading-relaxed">
-                Notre Team
+            <div className="left-[15px] mb-8 text-black text-2xl font-extrabold font-['Open Sans'] leading-relaxed">
+                Équipe <span className="text-[#203edc]">Raccoelec</span>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 flex justify-center items-center text-center">
@@ -45,7 +45,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/5.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Julien L.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Développeur</dd>
+                            <dd className="text-sm text-gray-600">Infographiste</dd>
                         </dl>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/6.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Laura A.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Responsable du contenu</dd>
                         </dl>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/1.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Victor M.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Expert Raccoelec</dd>
                         </dl>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/2.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Lucie A.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Expert Raccoelec</dd>
                         </dl>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/3.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Matthieu D.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Expert Raccoelec</dd>
                         </dl>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/4.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Floriane T.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Rédactrice</dd>
                         </dl>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/8.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Claire M.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Support client</dd>
                         </dl>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ const aproposnous = () => {
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/9.png" alt="" width={100} height={100} />
                         <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Louis G.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
-                            <dd className="text-sm text-gray-600">Paradigm Representative</dd>
+                            <dd className="text-sm text-gray-600">Support technique</dd>
                         </dl>
                     </div>
                 </div>
@@ -128,28 +128,26 @@ const aproposnous = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div
                     className="bg-gray-200 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
-                    style={{ backgroundImage: 'url("/assets/services/augmentation de puissance.jpg")' }}
+                    style={{ backgroundImage: 'url("/assets/equipe/1.jpeg")' }}
                 >
-                    {/* Content inside the div */}
-                </div>
-                <div
-                    className="bg-gray-300 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
-                    style={{ backgroundImage: 'url("/assets/services/modification de branchement.jpg")' }}
-                >
-                    {/* Content inside the div */}
-                </div>
-                <div
-                    className="bg-gray-400 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
-                    style={{ backgroundImage: 'url("/assets/services/raccordement provisoire.jpg")' }}
-                >
-                    {/* Content inside the div */}
                 </div>
                 <div
                     className="bg-gray-500 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
-                    style={{ backgroundImage: 'url("/assets/services/raccordemet definitive.jpg")' }}
+                    style={{ backgroundImage: 'url("/assets/equipe/7.jpg")' }}
                 >
-                    {/* Content inside the div */}
                 </div>
+              
+                <div
+                    className="bg-gray-400 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
+                    style={{ backgroundImage: 'url("/assets/equipe/3.jpeg")' }}
+                >
+                </div>
+                <div
+                    className="bg-gray-300 p-4 h-60 sm:h-80 bg-cover bg-center bg-no-repeat rounded-md"
+                    style={{ backgroundImage: 'url("/assets/equipe/2.png")' }}
+                >
+                </div>
+               
             </div>
         </section>
 
@@ -244,32 +242,42 @@ const aproposnous = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 flex justify-center items-center text-center">
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.jpg")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.webp")' }}>
 
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter laccès à des données complètes et précises sur les entreprises françaises</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter vos démarches de raccordement électrique</h3>
                     <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
-                    de Raccoelec centralise et met à disposition des informations légales, juridiques et financières sur 10 millions d&apos;sentreprises françaises, avec un accès à 7 milliards de données mises à jour en temps réel. La plateforme publie des informations qui sont mises à disposition au travers d&apos;sorganismes officiels et donc fiables, en open data.
+                    Notre plateforme facilite vos demandes de raccordement électrique, qu&apos;il s&apos;agisse d&apos;Enedis ou d'une ELD. 
                     </p>
+                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    Nous vous accompagnons à chaque étape, de la constitution du dossier jusqu&apos;à la mise en service. Grâce à notre expertise, nous assurons un suivi rigoureux pour un traitement rapide et efficace. En collaboration avec les gestionnaires de réseau et fournisseurs d&apos;énergie, nous garantissons une transition fluide. Bénéficiez d&apos;une assistance complète pour le raccordement et la signature de votre contrat, en toute simplicité.
+                    </p>
+                   
                 </div>
 
                 <div className="w-full">
                     <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/2.jpg")' }}>
 
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Offrir une plateforme intuitive et exhaustive pour la prise de décisions éclairées</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Offrir une plateforme intuitive et complète pour vos démarches de raccordement</h3>
                     <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
-                        Grâce à son interface ergonomique et intuitive, de Raccoelec simplifie la consultation des données et propose des outils avancés pour une analyse approfondie, incluant des indicateurs tels que la solvabilité et le scoring financier. Cela permet aux utilisateurs de prendre des décisions informées et adaptées aux évolutions du marché.
+                        Grâce à une interface ergonomique et intuitive, Raccoelec simplifie la gestion de vos demandes de raccordement électrique. Notre plateforme met à votre disposition des outils performants pour suivre et gérer chaque étape du processus, de l&apos;étude technique à la signature de votre contrat d&apos;énergie.
+                    </p>
+                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    En vous proposant des informations claires et des fonctionnalités avancées, Raccoelec vous permet d&apos;optimiser vos démarches et de prendre des décisions éclairées, tout en vous adaptant aux exigences du réseau électrique et aux évolutions réglementaires.
                     </p>
                 </div>
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.jpg")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.webp")' }}>
                        
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;séthique dans les affaires</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;éthique dans les démarches de raccordement</h3>
                     <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
-                        En rendant les informations stratégiques accessibles en un seul point et en fournissant 99 % de ces données gratuitement, de Raccoelec améliore la transparence des entreprises. La plateforme soutient un environnement d&apos;saffaires éthique et responsable, contribuant ainsi à une meilleure compréhension des forces en jeu sur le marché.
+                        En centralisant toutes les informations nécessaires en un seul point et en rendant la majorité de nos services accessibles gratuitement, Raccoelec renforce la transparence dans les démarches de raccordement électrique.
+                    </p>
+                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                        Notre plateforme soutient un environnement responsable et éthique en offrant un accompagnement clair, précis et conforme aux réglementations en vigueur. Cela permet aux utilisateurs de mieux comprendre les processus et de prendre des décisions en toute confiance, dans un esprit de collaboration avec les acteurs du secteur énergétique.
                     </p>
                 </div>
                         
@@ -278,19 +286,19 @@ const aproposnous = () => {
 
         <section className="max-w-7xl mx-auto mt-10 p-8">
             <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 gap-4 flex justify-center items-center text-center">
-                <div className="h-96 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.jpg")' }}> </div>
+                <div className="h-96 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/4.jpg")' }}> </div>
                 <div className="w-full h-full flex flex-col justify-center">
                     <h2 className="text-[#203edc] text-lg font-semibold text-start">
                         NOTRE ENGAGEMENT
                     </h2>
                     <h1 className="text-gray-800 text-2xl font-bold mt-2  text-start">
-                        Dire la vérité, rien que la vérité sur les entreprises
+                        Dire la vérité, rien que la vérité sur le raccordement électrique
                     </h1>
                     <p className="text-gray-600 mt-4  text-start">
-                        Nous avons la conviction que la transparence est un élément essentiel pour assurer la crédibilité et la durabilité d&apos;sune entreprise sur le marché.
+                        Nous sommes convaincus que la transparence est essentielle pour garantir la confiance et la pérennité dans vos démarches de raccordement électrique.
                     </p>
                     <p className="text-gray-600 mt-4  text-start">
-                    Favorisons un environnement d&apos;saffaires plus éthique et plus responsable afin de fournir une transparence totale sur les mécanismes du marché, les forces en jeu et les pratiques commerciales.
+                        Chez Raccoelec, nous favorisons un environnement plus éthique et responsable en vous offrant une visibilité complète sur les étapes du processus, les acteurs impliqués et les délais à prévoir. Notre objectif est de vous fournir une transparence totale, afin que vous puissiez avancer en toute confiance et en toute sérénité dans vos projets énergétiques.
                     </p>
                 </div>
             </div>
