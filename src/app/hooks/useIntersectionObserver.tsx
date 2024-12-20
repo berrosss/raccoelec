@@ -6,6 +6,7 @@ const useIntersectionObserver = (options = {}) => {
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentElement = elementRef.current; // Copy the ref value to a local variable
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -13,10 +14,10 @@ const useIntersectionObserver = (options = {}) => {
       options
     );
 
-    if (elementRef.current) observer.observe(elementRef.current);
+    if (currentElement) observer.observe(currentElement);
 
     return () => {
-      if (elementRef.current) observer.unobserve(elementRef.current);
+      if (currentElement) observer.unobserve(currentElement);
     };
   }, [options]);
 

@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { gsap } from "gsap";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import Image from "next/image";
@@ -37,36 +36,25 @@ const Table = () => {
 
   const [shuffledData, setShuffledData] = useState<TableData[]>(initialData);
   const tableRef = useRef<HTMLTableElement | null>(null);
-  const [tableSectionRef, isTableSectionRefVisible] = useIntersectionObserver({ threshold: 0.5 });
-
-  useEffect(() => {
-    if(isTableSectionRefVisible) {
-      shuffleData();
-    }
-
-  }, [isTableSectionRefVisible]);
-
-  // Shuffle and animate
-  const shuffleData = () => {
-    const newData = [...shuffledData].sort(() => Math.random() - 0.5);
-    animateShuffle(newData);
-    setShuffledData(newData);
-  };
-
-  const animateShuffle = (newData: TableData[]) => {
+  const [tableSectionRef, isTableSectionRefVisible] = useIntersectionObserver({
+    threshold: 0.5,
+  });
+  
+  // Wrap animateShuffle in useCallback
+  const animateShuffle = useCallback((newData: TableData[]) => {
     if (!tableRef.current) return;
-
-    const rows = Array.from(tableRef.current.querySelectorAll("tr"));
+  
+    const rows = Array.from(tableRef.current.querySelectorAll("tbody.tr"));
     const initialPositions = rows.map((row) => (row as HTMLElement).getBoundingClientRect());
-
+  
     setShuffledData(newData);
-
+  
     setTimeout(() => {
       const newPositions = rows.map((row) => (row as HTMLElement).getBoundingClientRect());
-
+  
       rows.forEach((row, i) => {
         const deltaY = initialPositions[i].top - newPositions[i].top;
-
+  
         gsap.fromTo(
           row as HTMLElement,
           { y: deltaY },
@@ -74,7 +62,22 @@ const Table = () => {
         );
       });
     }, 0);
-  };
+  }, []);
+  
+  // Shuffle and animate
+  const shuffleData = useCallback(() => {
+    setShuffledData((prevShuffledData) => {
+      const newData = [...prevShuffledData].sort(() => Math.random() - 0.5);
+      animateShuffle(newData);
+      return newData;
+    });
+  }, [animateShuffle]);
+  
+  useEffect(() => {
+    if (isTableSectionRefVisible) {
+      shuffleData();
+    }
+  }, [isTableSectionRefVisible, shuffleData]);
 
   return (
     <section className="mb-20" ref={tableSectionRef}>
@@ -372,7 +375,7 @@ const Table = () => {
                             <g id="SVGRepo_iconCarrier">
                               <path
                                 d="M7 7L17 17M17 17H8M17 17V8"
-                                stroke="#ef4444" 
+                                stroke="#ef4444"
                                 strokeWidth={2}
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -446,7 +449,7 @@ const Table = () => {
                             <g id="SVGRepo_iconCarrier">
                               <path
                                 d="M7 7L17 17M17 17H8M17 17V8"
-                                stroke="#ef4444" 
+                                stroke="#ef4444"
                                 strokeWidth={2}
                                 strokeLinecap="round"
                                 strokeLinejoin="round"

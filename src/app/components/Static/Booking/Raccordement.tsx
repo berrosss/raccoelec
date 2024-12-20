@@ -20,7 +20,7 @@ import Swal from "sweetalert2";
 
 const Raccordement = () => {
 
-  const [currentForm, setCurrentForm] = useState("first_form");
+  const [currentForm, setCurrentForm] = useState("second_form");
   const [activeSteps, setActiveSteps] = useState<string[]>(["sp1"]);
   const router = useRouter();
 
@@ -622,20 +622,7 @@ const Raccordement = () => {
                       className="viab2 transition-all duration-300 flex cursor-pointer h-[120px] items-center justify-center flex-col gap-4 rounded-xl border border-slate-300 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#005EB8] has-[:checked]:ring-1 has-[:checked]:ring-[#005EB8] has-[:checked]:bg-[#bfd7ed]"
                     >
                       <p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-12 text-slate-500 -mb-2"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                          />
-                        </svg>
+                        <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-12 text-slate-500 -mb-2"> <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
                       </p>
                       <p className="text-slate-800 font-semibold text-[17px] text-center">
                         Maison
@@ -659,20 +646,7 @@ const Raccordement = () => {
                       className="viab2 transition-all duration-300 flex cursor-pointer h-[120px] items-center justify-center flex-col gap-4 rounded-xl border border-slate-300 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#005EB8] has-[:checked]:ring-1 has-[:checked]:ring-[#005EB8] has-[:checked]:bg-[#bfd7ed]"
                     >
                       <p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-12 text-slate-500 -mb-2"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
-                          />
-                        </svg>
+                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#64748b" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path d="M18 21V22C18.5523 22 19 21.5523 19 21H18ZM6 21H5C5 21.5523 5.44772 22 6 22V21ZM17.454 3.10899L17 4L17.454 3.10899ZM17.891 3.54601L17 4L17.891 3.54601ZM6.54601 3.10899L7 4L6.54601 3.10899ZM6.10899 3.54601L7 4L6.10899 3.54601ZM9 6C8.44772 6 8 6.44772 8 7C8 7.55228 8.44772 8 9 8V6ZM10 8C10.5523 8 11 7.55228 11 7C11 6.44772 10.5523 6 10 6V8ZM9 9C8.44772 9 8 9.44772 8 10C8 10.5523 8.44772 11 9 11V9ZM10 11C10.5523 11 11 10.5523 11 10C11 9.44772 10.5523 9 10 9V11ZM14 9C13.4477 9 13 9.44772 13 10C13 10.5523 13.4477 11 14 11V9ZM15 11C15.5523 11 16 10.5523 16 10C16 9.44772 15.5523 9 15 9V11ZM14 12C13.4477 12 13 12.4477 13 13C13 13.5523 13.4477 14 14 14V12ZM15 14C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12V14ZM9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14V12ZM10 14C10.5523 14 11 13.5523 11 13C11 12.4477 10.5523 12 10 12V14ZM14 6C13.4477 6 13 6.44772 13 7C13 7.55228 13.4477 8 14 8V6ZM15 8C15.5523 8 16 7.55228 16 7C16 6.44772 15.5523 6 15 6V8ZM7.6 4H16.4V2H7.6V4ZM17 4.6V21H19V4.6H17ZM18 20H6V22H18V20ZM7 21V4.6H5V21H7ZM16.4 4C16.6965 4 16.8588 4.00078 16.9754 4.0103C17.0803 4.01887 17.0575 4.0293 17 4L17.908 2.21799C17.6366 2.07969 17.3668 2.03562 17.1382 2.01695C16.9213 1.99922 16.6635 2 16.4 2V4ZM19 4.6C19 4.33647 19.0008 4.07869 18.9831 3.86177C18.9644 3.63318 18.9203 3.36344 18.782 3.09202L17 4C16.9707 3.94249 16.9811 3.91972 16.9897 4.02463C16.9992 4.14122 17 4.30347 17 4.6H19ZM17 4L18.782 3.09202C18.5903 2.7157 18.2843 2.40973 17.908 2.21799L17 4ZM7.6 2C7.33647 2 7.07869 1.99922 6.86177 2.01695C6.63318 2.03562 6.36344 2.07969 6.09202 2.21799L7 4C6.94249 4.0293 6.91972 4.01887 7.02463 4.0103C7.14122 4.00078 7.30347 4 7.6 4V2ZM7 4.6C7 4.30347 7.00078 4.14122 7.0103 4.02463C7.01887 3.91972 7.0293 3.94249 7 4L5.21799 3.09202C5.07969 3.36344 5.03562 3.63318 5.01695 3.86177C4.99922 4.07869 5 4.33647 5 4.6H7ZM6.09202 2.21799C5.71569 2.40973 5.40973 2.71569 5.21799 3.09202L7 4L6.09202 2.21799ZM9 8H10V6H9V8ZM9 11H10V9H9V11ZM14 11H15V9H14V11ZM14 14H15V12H14V14ZM9 14H10V12H9V14ZM14 8H15V6H14V8ZM13 18V21H15V18H13ZM11 21V18H9V21H11ZM12 17C12.5523 17 13 17.4477 13 18H15C15 16.3431 13.6569 15 12 15V17ZM12 15C10.3431 15 9 16.3431 9 18H11C11 17.4477 11.4477 17 12 17V15Z" fill="#64748b"></path> </g></svg>
                       </p>
                       <p className="text-slate-800 font-semibold text-[17px] text-center">
                         Appartement ou local en immeuble
@@ -696,45 +670,7 @@ const Raccordement = () => {
                       className="viab2 transition-all duration-300 flex cursor-pointer h-[120px] items-center justify-center flex-col gap-4 rounded-xl border border-slate-300 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#005EB8] has-[:checked]:ring-1 has-[:checked]:ring-[#005EB8] has-[:checked]:bg-[#bfd7ed]"
                     >
                       <p>
-                        <svg
-                          viewBox="0 0 48 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="size-12 text-slate-500 -mb-2"
-                        >
-                          <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <g id="SVGRepo_iconCarrier">
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M9 18H11V28H37V18H39V28H40.5C40.7761 28 41 28.2239 41 28.5V29.5C41 29.7761 40.7761 30 40.5 30H7.5C7.22386 30 7 29.7761 7 29.5V28.5C7 28.2239 7.22386 28 7.5 28H9V18ZM10 33V40H38V33H10ZM9 31C8.44772 31 8 31.4477 8 32V41C8 41.5523 8.44772 42 9 42H39C39.5523 42 40 41.5523 40 41V32C40 31.4477 39.5523 31 39 31H9Z"
-                              fill="#64748b"
-                            />
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M10.1888 8L8.04354 13.9129C8.01478 13.9922 8 14.0761 8 14.1609V16.551C8 17.3592 8.64747 18 9.42857 18C10.2097 18 10.8571 17.3592 10.8571 16.551C10.8571 15.9987 11.3049 15.551 11.8571 15.551C12.4094 15.551 12.8571 15.9987 12.8571 16.551C12.8571 17.3592 13.5046 18 14.2857 18C15.0668 18 15.7143 17.3592 15.7143 16.551C15.7143 15.9987 16.162 15.551 16.7143 15.551C17.2666 15.551 17.7143 15.9987 17.7143 16.551C17.7143 17.3592 18.3618 18 19.1429 18C19.9236 18 20.5708 17.3598 20.5714 16.5522C20.5719 16.0003 21.0195 15.553 21.5714 15.553C22.1234 15.553 22.571 16.0003 22.5714 16.5522C22.5721 17.3598 23.2193 18 24 18C24.7811 18 25.4286 17.3592 25.4286 16.551C25.4286 15.9987 25.8763 15.551 26.4286 15.551C26.9809 15.551 27.4286 15.9987 27.4286 16.551C27.4286 17.3592 28.076 18 28.8571 18C29.6379 18 30.2851 17.3598 30.2857 16.5522C30.2862 16.0003 30.7337 15.553 31.2857 15.553C31.8377 15.553 32.2853 16.0003 32.2857 16.5522C32.2864 17.3598 32.9336 18 33.7143 18C34.4954 18 35.1429 17.3592 35.1429 16.551C35.1429 15.9987 35.5906 15.551 36.1429 15.551C36.6951 15.551 37.1429 15.9987 37.1429 16.551C37.1429 17.3592 37.7903 18 38.5714 18C39.3525 18 40 17.3592 40 16.551V14.1609C40 14.0761 39.9852 13.9922 39.9565 13.9129L37.8112 8H10.1888ZM37.7764 7.90395L37.7763 7.9037L37.9181 7.85225L37.7763 7.90369C37.7763 7.90378 37.7763 7.90387 37.7764 7.90395ZM36.1429 18.9856C35.5233 19.6115 34.6656 20 33.7143 20C32.7629 20 31.9053 19.6115 31.2857 18.9856C30.6662 19.6115 29.8085 20 28.8571 20C27.9058 20 27.0481 19.6115 26.4286 18.9856C25.809 19.6115 24.9514 20 24 20C23.0486 20 22.191 19.6115 21.5714 18.9856C20.9519 19.6115 20.0942 20 19.1429 20C18.1915 20 17.3338 19.6115 16.7143 18.9856C16.0947 19.6115 15.2371 20 14.2857 20C13.3344 20 12.4767 19.6115 11.8571 18.9856C11.2376 19.6115 10.3799 20 9.42857 20C7.52715 20 6 18.4479 6 16.551V14.1609C6 13.8438 6.05528 13.529 6.16345 13.2308L8.34363 7.22159C8.60829 6.4921 9.30012 6 10.0819 6H37.9181C38.6999 6 39.3917 6.4921 39.6564 7.2216L41.8366 13.2308C41.9447 13.529 42 13.8438 42 14.1609V16.551C42 18.4479 40.4728 20 38.5714 20C37.6201 20 36.7624 19.6115 36.1429 18.9856Z"
-                              fill="#64748b"
-                            />
-                            <path
-                              d="M12 25.5C12 25.2239 12.2239 25 12.5 25H15.5C15.7761 25 16 25.2239 16 25.5V27.5C16 27.7761 15.7761 28 15.5 28H12.5C12.2239 28 12 27.7761 12 27.5V25.5Z"
-                              fill="#64748b"
-                            />
-                            <path
-                              d="M14 26.5C14 26.2239 14.2239 26 14.5 26H17.5C17.7761 26 18 26.2239 18 26.5V27.5C18 27.7761 17.7761 28 17.5 28H14.5C14.2239 28 14 27.7761 14 27.5V26.5Z"
-                              fill="#64748b"
-                            />
-                            <path
-                              d="M22 26.5C22 27.3284 21.3284 28 20.5 28C19.6716 28 19 27.3284 19 26.5C19 25.6716 19.6716 25 20.5 25C21.3284 25 22 25.6716 22 26.5Z"
-                              fill="#64748b"
-                            />
-                          </g>
-                        </svg>
+                        <svg width="40px" height="40px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-12 text-slate-500 -mb-2"> <g id="SVGRepo_bgCarrier" strokeWidth={0} /> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" /> <g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M9 18H11V28H37V18H39V28H40.5C40.7761 28 41 28.2239 41 28.5V29.5C41 29.7761 40.7761 30 40.5 30H7.5C7.22386 30 7 29.7761 7 29.5V28.5C7 28.2239 7.22386 28 7.5 28H9V18ZM10 33V40H38V33H10ZM9 31C8.44772 31 8 31.4477 8 32V41C8 41.5523 8.44772 42 9 42H39C39.5523 42 40 41.5523 40 41V32C40 31.4477 39.5523 31 39 31H9Z" fill="#64748b" /> <path fillRule="evenodd" clipRule="evenodd" d="M10.1888 8L8.04354 13.9129C8.01478 13.9922 8 14.0761 8 14.1609V16.551C8 17.3592 8.64747 18 9.42857 18C10.2097 18 10.8571 17.3592 10.8571 16.551C10.8571 15.9987 11.3049 15.551 11.8571 15.551C12.4094 15.551 12.8571 15.9987 12.8571 16.551C12.8571 17.3592 13.5046 18 14.2857 18C15.0668 18 15.7143 17.3592 15.7143 16.551C15.7143 15.9987 16.162 15.551 16.7143 15.551C17.2666 15.551 17.7143 15.9987 17.7143 16.551C17.7143 17.3592 18.3618 18 19.1429 18C19.9236 18 20.5708 17.3598 20.5714 16.5522C20.5719 16.0003 21.0195 15.553 21.5714 15.553C22.1234 15.553 22.571 16.0003 22.5714 16.5522C22.5721 17.3598 23.2193 18 24 18C24.7811 18 25.4286 17.3592 25.4286 16.551C25.4286 15.9987 25.8763 15.551 26.4286 15.551C26.9809 15.551 27.4286 15.9987 27.4286 16.551C27.4286 17.3592 28.076 18 28.8571 18C29.6379 18 30.2851 17.3598 30.2857 16.5522C30.2862 16.0003 30.7337 15.553 31.2857 15.553C31.8377 15.553 32.2853 16.0003 32.2857 16.5522C32.2864 17.3598 32.9336 18 33.7143 18C34.4954 18 35.1429 17.3592 35.1429 16.551C35.1429 15.9987 35.5906 15.551 36.1429 15.551C36.6951 15.551 37.1429 15.9987 37.1429 16.551C37.1429 17.3592 37.7903 18 38.5714 18C39.3525 18 40 17.3592 40 16.551V14.1609C40 14.0761 39.9852 13.9922 39.9565 13.9129L37.8112 8H10.1888ZM37.7764 7.90395L37.7763 7.9037L37.9181 7.85225L37.7763 7.90369C37.7763 7.90378 37.7763 7.90387 37.7764 7.90395ZM36.1429 18.9856C35.5233 19.6115 34.6656 20 33.7143 20C32.7629 20 31.9053 19.6115 31.2857 18.9856C30.6662 19.6115 29.8085 20 28.8571 20C27.9058 20 27.0481 19.6115 26.4286 18.9856C25.809 19.6115 24.9514 20 24 20C23.0486 20 22.191 19.6115 21.5714 18.9856C20.9519 19.6115 20.0942 20 19.1429 20C18.1915 20 17.3338 19.6115 16.7143 18.9856C16.0947 19.6115 15.2371 20 14.2857 20C13.3344 20 12.4767 19.6115 11.8571 18.9856C11.2376 19.6115 10.3799 20 9.42857 20C7.52715 20 6 18.4479 6 16.551V14.1609C6 13.8438 6.05528 13.529 6.16345 13.2308L8.34363 7.22159C8.60829 6.4921 9.30012 6 10.0819 6H37.9181C38.6999 6 39.3917 6.4921 39.6564 7.2216L41.8366 13.2308C41.9447 13.529 42 13.8438 42 14.1609V16.551C42 18.4479 40.4728 20 38.5714 20C37.6201 20 36.7624 19.6115 36.1429 18.9856Z" fill="#64748b" /> <path d="M12 25.5C12 25.2239 12.2239 25 12.5 25H15.5C15.7761 25 16 25.2239 16 25.5V27.5C16 27.7761 15.7761 28 15.5 28H12.5C12.2239 28 12 27.7761 12 27.5V25.5Z" fill="#64748b" /> <path d="M14 26.5C14 26.2239 14.2239 26 14.5 26H17.5C17.7761 26 18 26.2239 18 26.5V27.5C18 27.7761 17.7761 28 17.5 28H14.5C14.2239 28 14 27.7761 14 27.5V26.5Z" fill="#64748b" /> <path d="M22 26.5C22 27.3284 21.3284 28 20.5 28C19.6716 28 19 27.3284 19 26.5C19 25.6716 19.6716 25 20.5 25C21.3284 25 22 25.6716 22 26.5Z" fill="#64748b" /> </g> </svg>
                       </p>
                       <p className="text-slate-800 font-semibold text-[17px] text-center">
                         Local horse immeuble
@@ -760,34 +696,7 @@ const Raccordement = () => {
                       className="viab2 transition-all duration-300 flex cursor-pointer h-[120px] items-center justify-center flex-col gap-4 rounded-xl border border-slate-300 bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200 has-[:checked]:border-[#005EB8] has-[:checked]:ring-1 has-[:checked]:ring-[#005EB8] has-[:checked]:bg-[#bfd7ed]"
                     >
                       <p>
-                        <svg
-                          viewBox="0 0 512 512"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="#000000"
-                          className="size-12 text-slate-500 -mb-2"
-                        >
-                          <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-                          <g
-                            id="SVGRepo_tracerCarrier"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <g id="SVGRepo_iconCarrier">
-                            <polygon
-                              fill="var(--ci-primary-color, #64748b)"
-                              points="40.841 312 144.493 199.12 216.397 271.024 216.397 271.024 292.687 347.313 315.313 324.687 238.244 247.617 327.738 151.73 470.836 312 496 312 496 292.136 328.262 104.27 215.603 224.976 143.507 152.88 16 291.741 16 312 40.841 312"
-                              className="ci-primary"
-                            />
-                            <rect
-                              width={480}
-                              height={32}
-                              x={16}
-                              y={392}
-                              fill="var(--ci-primary-color, #64748b)"
-                              className="ci-primary"
-                            />
-                          </g>
-                        </svg>
+                        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#64748b" stroke-width="3.3920000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect x="8" y="8" width="48" height="48"></rect><line x1="8" y1="40" x2="56" y2="40"></line><line x1="24" y1="40" x2="24" y2="56"></line><polyline points="32 40 32 20 8 20"></polyline><line x1="56" y1="28" x2="32" y2="28"></line><line x1="20" y1="8" x2="20" y2="20"></line></g></svg>
                       </p>
                       <p className="text-slate-800 font-semibold text-[17px] text-center">
                         Immeuble ou batiment
@@ -1327,8 +1236,8 @@ const Raccordement = () => {
                 <button className="bg-[#cef7f3] text-white px-1 py-1 rounded-full">
                   <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    <g id="SVGRepo_iconCarrier"> <path d="M12 19H12.01M8.21704 7.69689C8.75753 6.12753 10.2471 5 12 5C14.2091 5 16 6.79086 16 9C16 10.6565 14.9931 12.0778 13.558 12.6852C12.8172 12.9988 12.4468 13.1556 12.3172 13.2767C12.1629 13.4209 12.1336 13.4651 12.061 13.6634C12 13.8299 12 14.0866 12 14.6L12 16" stroke="#627271" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path d="M12 19H12.01M8.21704 7.69689C8.75753 6.12753 10.2471 5 12 5C14.2091 5 16 6.79086 16 9C16 10.6565 14.9931 12.0778 13.558 12.6852C12.8172 12.9988 12.4468 13.1556 12.3172 13.2767C12.1629 13.4209 12.1336 13.4651 12.061 13.6634C12 13.8299 12 14.0866 12 14.6L12 16" stroke="#627271" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/> </g>
                   </svg>
                 </button>
 
@@ -1425,9 +1334,9 @@ const Raccordement = () => {
               <ul className="mb-8">
                 <li className="mb-3 flex justify-start items-center gap-3">
                   <svg className="size-7 inline-block text-slate-500" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    <g id="SVGRepo_iconCarrier"> <title>note-text</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" > <g id="Icon-Set"  transform="translate(-308.000000, -99.000000)" fill="#64748b"> <path d="M332,107 L316,107 C315.447,107 315,107.448 315,108 C315,108.553 315.447,109 316,109 L332,109 C332.553,109 333,108.553 333,108 C333,107.448 332.553,107 332,107 L332,107 Z M338,127 C338,128.099 336.914,129.012 335.817,129.012 L311.974,129.012 C310.877,129.012 309.987,128.122 309.987,127.023 L309.987,103.165 C309.987,102.066 310.902,101 312,101 L336,101 C337.098,101 338,101.902 338,103 L338,127 L338,127 Z M336,99 L312,99 C309.806,99 308,100.969 308,103.165 L308,127.023 C308,129.22 309.779,131 311.974,131 L335.817,131 C338.012,131 340,129.196 340,127 L340,103 C340,100.804 338.194,99 336,99 L336,99 Z M332,119 L316,119 C315.447,119 315,119.448 315,120 C315,120.553 315.447,121 316,121 L332,121 C332.553,121 333,120.553 333,120 C333,119.448 332.553,119 332,119 L332,119 Z M332,113 L316,113 C315.447,113 315,113.448 315,114 C315,114.553 315.447,115 316,115 L332,115 C332.553,115 333,114.553 333,114 C333,113.448 332.553,113 332,113 L332,113 Z" id="note-text"> </path> </g> </g> </g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <title>note-text</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd" > <g id="Icon-Set"  transform="translate(-308.000000, -99.000000)" fill="#64748b"> <path d="M332,107 L316,107 C315.447,107 315,107.448 315,108 C315,108.553 315.447,109 316,109 L332,109 C332.553,109 333,108.553 333,108 C333,107.448 332.553,107 332,107 L332,107 Z M338,127 C338,128.099 336.914,129.012 335.817,129.012 L311.974,129.012 C310.877,129.012 309.987,128.122 309.987,127.023 L309.987,103.165 C309.987,102.066 310.902,101 312,101 L336,101 C337.098,101 338,101.902 338,103 L338,127 L338,127 Z M336,99 L312,99 C309.806,99 308,100.969 308,103.165 L308,127.023 C308,129.22 309.779,131 311.974,131 L335.817,131 C338.012,131 340,129.196 340,127 L340,103 C340,100.804 338.194,99 336,99 L336,99 Z M332,119 L316,119 C315.447,119 315,119.448 315,120 C315,120.553 315.447,121 316,121 L332,121 C332.553,121 333,120.553 333,120 C333,119.448 332.553,119 332,119 L332,119 Z M332,113 L316,113 C315.447,113 315,113.448 315,114 C315,114.553 315.447,115 316,115 L332,115 C332.553,115 333,114.553 333,114 C333,113.448 332.553,113 332,113 L332,113 Z" id="note-text"> </path> </g> </g> </g>
                   </svg>
                   Votre Besoin: <strong>{formData.step1.radio}</strong>
                 </li>
@@ -1445,9 +1354,9 @@ const Raccordement = () => {
                 </li>
                 <li className="mb-3 flex justify-start items-center gap-3">
                   <svg className="size-7 inline-block text-slate-500" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    <g id="SVGRepo_iconCarrier"> <path d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path d="M5.13641 12.764L8.15456 9.08664C8.46255 8.69065 8.61655 8.49264 8.69726 8.27058C8.76867 8.07409 8.79821 7.86484 8.784 7.65625C8.76793 7.42053 8.67477 7.18763 8.48846 6.72184L7.77776 4.9451C7.50204 4.25579 7.36417 3.91113 7.12635 3.68522C6.91678 3.48615 6.65417 3.35188 6.37009 3.29854C6.0477 3.238 5.68758 3.32804 4.96733 3.5081L3 4C3 14 9.99969 21 20 21L20.4916 19.0324C20.6717 18.3121 20.7617 17.952 20.7012 17.6296C20.6478 17.3456 20.5136 17.0829 20.3145 16.8734C20.0886 16.6355 19.7439 16.4977 19.0546 16.222L17.4691 15.5877C16.9377 15.3752 16.672 15.2689 16.4071 15.2608C16.1729 15.2536 15.9404 15.3013 15.728 15.4001C15.4877 15.512 15.2854 15.7143 14.8807 16.119L11.8274 19.1733M12.9997 7C13.9765 7.19057 14.8741 7.66826 15.5778 8.37194C16.2815 9.07561 16.7592 9.97326 16.9497 10.95M12.9997 3C15.029 3.22544 16.9213 4.13417 18.366 5.57701C19.8106 7.01984 20.7217 8.91101 20.9497 10.94" stroke="#64748b" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/> </g>
                   </svg>
                   Téléphone:  <strong>{formData.step1.phone}</strong>
                 </li>
@@ -1485,9 +1394,9 @@ const Raccordement = () => {
                   <strong><span className="capitalize">{formData.step3.terrain}</span></strong>
                 </li>
                 <li className="flex justify-start items-center gap-3 mb-3">
-                  <svg className="inline-block text-slate-500" fill="#64748b" height="40px" width="40px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" stroke="#e5e7eb" stroke-width="0.00016">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  <svg className="inline-block text-slate-500" fill="#64748b" height="40px" width="40px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" stroke="#e5e7eb" strokeWidth="0.00016">
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" stroke-linejoin="round"/>
                     <g id="SVGRepo_iconCarrier"> <path className="cls-1" d="M4.732,7.95335,6.90908,2h3.63639L8.36364,7.01316h2.90911L4.72725,14,6.93656,7.95135Z"/> </g>
                   </svg>
                   Puissance maximale (en kVA)?:{" "}
@@ -1510,8 +1419,8 @@ const Raccordement = () => {
                 <li className="flex justify-start items-center gap-3">
 
                   <svg className="inline-block text-slate-500" fill="#64748b" width="30px" height="30px" viewBox="-8 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#64748b">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" stroke-linejoin="round"/>
                     <g id="SVGRepo_iconCarrier"> <title>paper</title> <path d="M13.52 5.72h-7.4c-0.36 0-0.56 0.2-0.6 0.24l-5.28 5.28c-0.040 0.040-0.24 0.24-0.24 0.56v12.2c0 1.24 1 2.24 2.24 2.24h11.24c1.24 0 2.24-1 2.24-2.24v-16.040c0.040-1.24-0.96-2.24-2.2-2.24zM5.28 8.56v1.8c0 0.32-0.24 0.56-0.56 0.56h-1.84l2.4-2.36zM14.080 24.040c0 0.32-0.28 0.56-0.56 0.56h-11.28c-0.32 0-0.56-0.28-0.56-0.56v-11.36h3.040c1.24 0 2.24-1 2.24-2.24v-3.040h6.52c0.32 0 0.56 0.24 0.56 0.56l0.040 16.080z"/> </g>
                   </svg>
                   Autorisation d&#39;urbanisme: <strong>{formData.step4.autorisation}</strong>

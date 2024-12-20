@@ -6,8 +6,8 @@ import Article from "@/app/components/Dynamic/Contents/Article";
 import Page from "@/app/components/Dynamic/Contents/Page";
 import Category from "@/app/components/Dynamic/Contents/Category";
 
-type Props = {
-  params: { slug: string[] };
+interface Props  {
+  params: Promise<{ slug: string[] }>;
 };
 
 // Define a type for Post
@@ -33,7 +33,8 @@ async function fetchContent(slug: string[]) {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const content = await fetchContent(params.slug);
+  const { slug } = await params;
+  const content = await fetchContent(slug);
   if (!content) {
     return {
       title: "Not Found",
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     content.description ||
     (content.content ? content.content.substring(0, 160) : "");
 
-  const canonicalUrl = `https://www.tirespedia.com/${params.slug.join("/")}`;
+  const canonicalUrl = `https://raccoelec.fr/${slug.join("/")}`;
 
   switch (content.type) {
     case "category":
@@ -137,7 +138,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function DynamicPage({ params }: Props) {
-  const content = await fetchContent(params.slug);
+    const { slug } = await params;
+
+  const content = await fetchContent(slug);
   if (!content) notFound();
 
   // Schema Markup
