@@ -20,7 +20,7 @@ import Swal from "sweetalert2";
 
 const Raccordement = () => {
 
-  const [currentForm, setCurrentForm] = useState("second_form");
+  const [currentForm, setCurrentForm] = useState("first_form");
   const [activeSteps, setActiveSteps] = useState<string[]>(["sp1"]);
   const router = useRouter();
 
