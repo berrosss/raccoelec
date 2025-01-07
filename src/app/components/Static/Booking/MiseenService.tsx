@@ -15,6 +15,7 @@ import { MdOutlineHomeWork } from "react-icons/md";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { LuFileCheck2 } from "react-icons/lu";
+import { PiPassword } from "react-icons/pi";
 
 interface FormData {
   need?: string;
@@ -542,11 +543,7 @@ const Raccordement = () => {
                           </li>
 
                           <li className="flex justify-start items-center gap-3 mb-3">
-                            <svg className="inline-block text-slate-500" fill="#64748b" height="40px" width="40px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" stroke="#e5e7eb" strokeWidth="0.00016">
-                              <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
-                              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
-                              <g id="SVGRepo_iconCarrier"> <path className="cls-1" d="M4.732,7.95335,6.90908,2h3.63639L8.36364,7.01316h2.90911L4.72725,14,6.93656,7.95135Z"/> </g>
-                            </svg>
+                            <PiPassword className="size-9 inline-block text-slate-500" />
                             la référence de votre branchement (PDL) est:{" "}
                             <span className="capitalize">
                               <strong>{formData.referencebranchement!.join("")}</strong>
