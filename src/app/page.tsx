@@ -6,7 +6,7 @@ import Carousel from "./components/Static/Sections/Carousel";
 import Table from "./components/Static/Sections/Table";
 import Marquees from "./components/Static/Sections/Marquees";
 import Blog from "./components/Dynamic/Home/Blog";
-import BackToTopButton from "./components/Static/back-to-top-button/page";
+import WhatsAppChat from "./components/Dynamic/whatsAppChat";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Table />
       <Marquees />
       <Blog />
-      <BackToTopButton />
+      <WhatsAppChat />
     </>
   );
 }
