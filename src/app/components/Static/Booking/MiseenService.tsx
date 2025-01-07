@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { IoFolderOpenOutline, IoMailOutline, IoStopwatchOutline } from "react-icons/io5";
+import React, { useState } from "react";
+import { IoFolderOpenOutline, IoMailOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { FiUser } from "react-icons/fi";
 import { AiOutlineUserSwitch } from "react-icons/ai";
@@ -12,7 +12,6 @@ import * as yup from "yup";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { MdOutlineHomeWork } from "react-icons/md";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { LuFileCheck2 } from "react-icons/lu";
 import { PiPassword } from "react-icons/pi";
@@ -44,6 +43,18 @@ const Raccordement = () => {
   const [formData, setFormData] = useState<FormData>({});
   const [autreType, setAutreType] = useState(false);
   const router = useRouter();
+
+  type Field = {
+    label: "name" | "prenom" | "email" | "phone";
+    placeholder: string;
+  };
+  
+  const fields: Field[] = [
+    { label: "name", placeholder: "Nom" },
+    { label: "prenom", placeholder: "Prénom" },
+    { label: "email", placeholder: "Email" },
+    { label: "phone", placeholder: "Téléphone" },
+  ];
 
   const validationSchemaForm1 = yup.object().shape({
     need: yup.string().required("Veuillez choisir un besoin."),
@@ -109,13 +120,13 @@ const Raccordement = () => {
   };
 
 
-  const sendEmail = async (data:any) => {
+  const sendEmail = async (data: FormData | { need: string; beneficiare: string; name: string; prenom: string; email: string; phone: string; }) => {
     try {
       await axios.post('https://raccoelec.fr/wp-json/custom/v1/send-email-3', data);
     } catch (error) {
       Swal.fire({
         icon: 'error',
-        title: 'Error',
+        title: `Error ${error}`,
         text: 'Error sending email',
       });
     }
@@ -221,12 +232,7 @@ const Raccordement = () => {
 
                         <div className="mb-[60px] w-full mt-5 border-t-[1px] border-slate-200 pt-10">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                            {[
-                              { label: "name" as "name", placeholder: "Nom" },
-                              { label: "prenom" as "prenom", placeholder: "Prénom" },
-                              { label: "email" as "email", placeholder: "Email" },
-                              { label: "phone" as "phone", placeholder: "Téléphone" },
-                            ].map((field, index) => (
+                            {fields.map((field, index) => (
                               <div key={index}>
                                 <label htmlFor={field.placeholder} className="block text-sm capitalize">
                                   {field.placeholder}:
@@ -442,7 +448,7 @@ const Raccordement = () => {
                           </div>
                           <div className="mb-6">
                             <p className="text-sm text-gray-600">
-                              Sinon, merci de préciser le numéro cadastral de la parcelle dans le complément d'adresse à la question suivante.
+                              Sinon, merci de préciser le numéro cadastral de la parcelle dans le complément d&apos;adresse à la question suivante.
                             </p>
                           </div>
                           <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12">

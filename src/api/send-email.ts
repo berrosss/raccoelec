@@ -13,7 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { formData } = req.body;
 
   // Create a transporter
-  let transporter = nodemailer.createTransport({
+   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST, 
     port: Number(process.env.SMTP_PORT), 
     secure: process.env.SMTP_SECURE === 'true', 
@@ -24,7 +24,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } as nodemailer.TransportOptions);
 
   // Email options
-  let mailOptions = {
+  const mailOptions = {
     from: process.env.EMAIL_USER,
     to: "barah.abderahim@gmail.com",
     subject: 'New Form Submission',

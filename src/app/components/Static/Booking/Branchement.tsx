@@ -1,14 +1,10 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import { PiPassword, PiUsersThreeLight } from "react-icons/pi";
+import React, { useState } from "react";
 import { IoFolderOpenOutline, IoMailOutline, IoStopwatchOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { FiUser } from "react-icons/fi";
 import { AiOutlineUserSwitch } from "react-icons/ai";
-import { FaRegSquare } from "react-icons/fa";
-import { useRouter } from "next/navigation";
-import { LuDoorOpen, LuFileCheck2 } from "react-icons/lu";
+import {  LuFileCheck2 } from "react-icons/lu";
 import { IoMdPaper } from "react-icons/io";
 import { FaRegPenToSquare } from "react-icons/fa6";
 import Swal from "sweetalert2";
@@ -16,8 +12,9 @@ import * as yup from "yup";
 import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { MdOutlineHomeWork } from "react-icons/md";
+
 
 interface FormData {
   need?: string;
@@ -43,6 +40,18 @@ const Branchement = () => {
   const [formData, setFormData] = useState<FormData>({});
   const [autreType, setAutreType] = useState(false);
   const router = useRouter();
+
+  type Field = {
+    label: "name" | "prenom" | "email" | "phone";
+    placeholder: string;
+  };
+  
+  const fields: Field[] = [
+    { label: "name", placeholder: "Nom" },
+    { label: "prenom", placeholder: "Prénom" },
+    { label: "email", placeholder: "Email" },
+    { label: "phone", placeholder: "Téléphone" },
+  ];
 
 
   const validationSchemaForm1 = yup.object().shape({
@@ -100,13 +109,13 @@ const Branchement = () => {
     }
   };
 
-  const sendEmail = async (data:any) => {
+  const sendEmail = async (data: FormData | { need: string; beneficiare: string; prenom: string; email: string; phone: string; name: string; }) => {
     try {
       await axios.post('https://raccoelec.fr/wp-json/custom/v1/send-email-2', data);
     } catch (error) {
       Swal.fire({
         icon: 'error',
-        title: 'Error',
+        title: `Error ${error}`,
         text: 'Error sending email',
       });
     }
@@ -213,12 +222,7 @@ const Branchement = () => {
     
                             <div className="mb-[60px] w-full mt-5 border-t-[1px] border-slate-200 pt-10">
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                                {[
-                                  { label: "name" as "name", placeholder: "Nom" },
-                                  { label: "prenom" as "prenom", placeholder: "Prénom" },
-                                  { label: "email" as "email", placeholder: "Email" },
-                                  { label: "phone" as "phone", placeholder: "Téléphone" },
-                                ].map((field, index) => (
+                                {fields.map((field, index) => (
                                   <div key={index}>
                                     <label htmlFor={field.placeholder} className="block text-sm capitalize">
                                       {field.placeholder}:

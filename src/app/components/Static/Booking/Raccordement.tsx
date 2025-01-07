@@ -1,8 +1,8 @@
 
 
 "use client";
-import React, { useEffect, useState } from "react";
-import { useForm, Controller, FormProvider } from "react-hook-form";
+import React, { useState } from "react";
+import { useForm, FormProvider } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { SlLocationPin } from "react-icons/sl";
@@ -48,6 +48,18 @@ const Raccordement = () => {
   const [selectedPuissance, setSelectedPuissance] = useState<string | null>(null);
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
   const router = useRouter();
+
+  type Field = {
+    label: "name" | "prenom" | "email" | "phone";
+    placeholder: string;
+  };
+  
+  const fields: Field[] = [
+    { label: "name", placeholder: "Nom" },
+    { label: "prenom", placeholder: "Prénom" },
+    { label: "email", placeholder: "Email" },
+    { label: "phone", placeholder: "Téléphone" },
+  ];
 
   const validationSchemaForm1 = yup.object().shape({
     need: yup.string().required("Veuillez choisir un besoin."),
@@ -133,13 +145,13 @@ const Raccordement = () => {
   };
 
 
-  const sendEmail = async (data:any) => {
+  const sendEmail = async (data: FormData | { need: string; beneficiare: string; name: string; prenom: string; email: string; phone: string; }) => {
     try {
       await axios.post('https://raccoelec.fr/wp-json/custom/v1/send-email-1', data);
     } catch (error) {
       Swal.fire({
         icon: 'error',
-        title: 'Error',
+        title: `Error ${error}`,
         text: 'Error sending email',
       });
     }
@@ -242,12 +254,7 @@ const Raccordement = () => {
 
                         <div className="mb-[60px] w-full mt-5 border-t-[1px] border-slate-200 pt-10">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                            {[
-                              { label: "name" as "name", placeholder: "Nom" },
-                              { label: "prenom" as "prenom", placeholder: "Prénom" },
-                              { label: "email" as "email", placeholder: "Email" },
-                              { label: "phone" as "phone", placeholder: "Téléphone" },
-                            ].map((field, index) => (
+                            {fields.map((field, index) => (
                               <div key={index}>
                                 <label htmlFor={field.placeholder} className="block text-sm capitalize">
                                   {field.placeholder}:
