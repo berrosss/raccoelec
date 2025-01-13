@@ -10,14 +10,13 @@ const Features = () => {
   return (
     <div className="flex justify-center items-center flex-col mb-20 px-5 lg:px-0" id="commencer-ma-demande">
       <h2 className="text-2xl sm:text-3xl text-zinc-950 font-bold text-center mb-2">
-        Nous sommes là pour vous accompagner
+        Les demandes de <span className="text-[#1623dc]">raccordement Enedis</span>
       </h2>
+      <p className="text-zinc-700 text-[16px] sm:text-lg max-w-[800px] text-center">
+        Un seul portail raccordement.
+      </p>
       <p className="text-zinc-700 mb-10 text-[16px] sm:text-lg max-w-[800px] text-center">
-        Découvrez nos services complets de raccordement électrique, comprenant
-        l&#39;installation, la maintenance préventive, le dépannage
-        d&ldquo;urgence et la conformité aux normes en vigueur. Nos électriciens
-        certifiés sont là pour vous garantir une tranquillité d&#39;esprit
-        totale.
+      pour toutes vos demandes de raccordement Enedis.
       </p>
 
       {/* Tabs Container */}

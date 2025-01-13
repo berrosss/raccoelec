@@ -43,7 +43,7 @@ const Timeline = () => {
     },
     {
       title: "Mise en Service",
-      description: "représente la dernière étape avant que vous ne puissiez signer votre contrat avec le fournisseur d&apos;électricité de votre choix.",
+      description: "représente la dernière étape avant que vous ne puissiez signer votre contrat avec le fournisseur d'électricité de votre choix.",
       icon: LuFileCheck2,
       isCompleted: false,
     },

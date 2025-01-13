@@ -677,7 +677,7 @@ const Raccordement = () => {
             style={{ boxShadow: "0 10px 30px 0 rgba(62, 87, 111, 0.2)" }}
           >
             <h2 className="stepper-title text-[16px] leading-[24px] font-light text-left text-[#212529] mb-10">
-              Quel type de site souhaitez-vous raccorder / réseau électrique ?
+              Quel type de site souhaitez-vous raccorder au réseau électrique ?
             </h2>
             <div className="max-w-[600px] mx-auto">
               <fieldset className="space-y-4">
@@ -926,7 +926,7 @@ const Raccordement = () => {
                 {formData.step2.DeliveryOption === "Autre" && (
                   <textarea
                     className="mt-4 w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#005EB8] focus:border-[#005EB8]"
-                    placeholder="Please specify other type..."
+                    placeholder="Préciser votre besoin..."
                     rows={4}
                     name="otherSpecification"
                     value={formData.step2.otherSpecification || ""}

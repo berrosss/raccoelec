@@ -112,7 +112,7 @@ const Hero = () => {
                     <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#18a974" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
                   </div>
-                  <span className="text-white">Experts de confiance</span>
+                  <span className="text-white">Simple et fluide</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="bg-green-100 rounded-full p-1">

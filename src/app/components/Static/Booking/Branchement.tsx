@@ -57,10 +57,10 @@ const Branchement = () => {
   const validationSchemaForm1 = yup.object().shape({
     need: yup.string().required("Veuillez choisir un besoin."),
     beneficiare: yup.string().required("Veuillez choisir un bénéficiaire."),
-    name: yup.string().required("Le champ Nom est requis.").min(3, "Name must be at least 3 characters."),
-    prenom: yup.string().required("Le champ Prenom est requis.").min(3, "Name must be at least 3 characters."),
-    email: yup.string().required("Le champ Email est requis.").email("Please enter a valid email address."),
-    phone: yup.string().required("Le champ Phone est requis.").matches(/^\d{10}$/, "Phone number must be exactly 10 digits."),
+    name: yup.string().required("Le champ Nom est requis.").min(3, "Le nom doit comporter au moins 3 caractères."),
+    prenom: yup.string().required("Le champ Prenom est requis.").min(3, "Le nom doit comporter au moins 3 caractères."),
+    email: yup.string().required("Le champ Email est requis.").email("S'il vous plaît, mettez une adresse email valide."),
+    phone: yup.string().required("Le champ téléphone est requis.").matches(/^\d{10}$/, "Le numéro de téléphone doit comporter exactement 10 chiffres."),
   });
   
   const validationSchemaForm2 = () => yup.object().shape({
@@ -252,7 +252,7 @@ const Branchement = () => {
                       {currentStep === 2 && (
                         <div>
                             <h2 className="stepper-title text-[16px] leading-[24px] font-light text-left text-[#212529] mb-10">
-                              Quel type de site souhaitez-vous raccorder / réseau électrique ?
+                              Quel type de site souhaitez-vous raccorder au réseau électrique ?
                             </h2>
                             <div className="max-w-[600px] mx-auto">
                               <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -290,7 +290,7 @@ const Branchement = () => {
                                         {...methods.register("autreType")}
                                         id="autreType"
                                         className="mt-4 w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#005EB8] focus:border-[#005EB8]"
-                                        placeholder="Please specify other type..."
+                                        placeholder="Préciser votre besoin..."
                                         rows={4}
                                         name="autreType"
                                       />
