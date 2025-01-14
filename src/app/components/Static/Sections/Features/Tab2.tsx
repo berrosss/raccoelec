@@ -10,6 +10,7 @@ interface Service {
   buttonLink: string;
   buttonText: string;
   animation: string;
+  class: string;
 }
 
 const Tab1 = () => {
@@ -20,10 +21,11 @@ const Tab1 = () => {
         "/assets/services/deplacement de compteur.jpg",
       title: "Déplacement de compteur",
       description:
-        "Déplacement d&apos;un compteur Linky et/ou de son disjoncteur.",
+        "Déplacement d'un compteur Linky et/ou de son disjoncteur.",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
-      animation: "fade-right"
+      animation: "fade-right",
+      class: "animate-fromLeft w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 2,
@@ -31,10 +33,11 @@ const Tab1 = () => {
         "/assets/services/modification de branchement.jpg",
       title: "Modification de branchement",
       description:
-        "Déplacement d\&apos;un branchement électrique (aérien ou sous-terrain).",
+        "Déplacement d'un branchement électrique (aérien ou sous-terrain).",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
-      animation: "fade-up"
+      animation: "fade-up",
+      class: " w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 3,
@@ -42,10 +45,11 @@ const Tab1 = () => {
         "/assets/services/supression de branchement electrique.jpg",
       title: "Suppression de branchement électrique",
       description:
-        "Retrait ou suppression d\&apos;un compteur Linky",
+        "Retrait ou suppression d'un compteur Linky",
       buttonText: "Faire ma demande",
       buttonLink: "/modification-de-branchement",
-      animation: "fade-left"
+      animation: "fade-left",
+      class: "animate-fromRight w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
   ];
 
@@ -57,8 +61,7 @@ const Tab1 = () => {
           data-aos-duration="20"
           data-aos-once="true"
           key={service.id}
-          className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
-          data-taos-class="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
+          className={service.class}
         >
           <Image
             className="rounded-2xl img-tabs"

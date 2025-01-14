@@ -330,7 +330,7 @@ ol {
 
 /* Apply the infinite-scroll animation to elements */
 .infinite-scroll {
-  animation: infinite-scroll 70s linear infinite;
+  animation: infinite-scroll 50s linear infinite;
 }
 
 /* Pause the animation when the parent container is hovered */

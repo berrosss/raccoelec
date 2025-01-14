@@ -10,6 +10,7 @@ interface Service {
   buttonLink: string;
   buttonText: string;
   animation: string;
+  class: string;
 }
 
 const Tab1 = () => {
@@ -23,7 +24,8 @@ const Tab1 = () => {
         "Déclarer mon installation photovoltaïque ou mes panneaux solaires à Enedis.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
-      animation: "fade-right"
+      animation: "fade-right",
+      class: "animate-fromLeft w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 2,
@@ -34,7 +36,8 @@ const Tab1 = () => {
         "Souscrivez votre contrat EDF et mettez à jour votre compteur.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
-      animation: "fade-up"
+      animation: "fade-up",
+      class: " w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 3,
@@ -45,7 +48,8 @@ const Tab1 = () => {
         "Augmentez ou diminuez la puissance de votre installation électrique.",
       buttonText: "Faire ma demande",
       buttonLink: "/mise-en-service",
-      animation: "fade-left"
+      animation: "fade-left",
+      class: "animate-fromRight w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
   ];
 
@@ -57,8 +61,7 @@ const Tab1 = () => {
           data-aos-duration="20"
           data-aos-once="true"
           key={service.id}
-          className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
-          data-taos-class="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform duration-[700ms] delay-[100ms] taos:opacity-0 taos:translate-y-[100px] [animation-iteration-count:infinite] taos-init"
+          className={service.class}
         >
           <Image
             className="rounded-2xl img-tabs"

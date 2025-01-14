@@ -13,11 +13,7 @@ const About = () => {
             À propos de <span className="text-[#1523dc]">Raccoelec</span>
           </h3>
           <p className="text-zinc-500 text-lg">
-            Raccoelec est un opérateur expert et spécialiste, acteur majeur
-            sur le marché, proposant un service dédié de conseil, d&apos;assistance
-            et d&lsquo;accompagnement à la démarche administrative et au suivi d&lsquo;une
-            ou de demandes de raccordement électrique, en France, que ce soit
-            pour des particuliers ou des professionnels.
+          Raccoelec est un spécialiste reconnu dans le domaine, offrant des services sur mesure pour accompagner particuliers et professionnels dans leurs démarches administratives et le suivi de leurs demandes de raccordement électrique à travers toute la France.
           </p>
         </div>
         <div

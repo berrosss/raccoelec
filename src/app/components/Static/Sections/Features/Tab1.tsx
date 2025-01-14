@@ -10,6 +10,7 @@ interface Service {
   buttonLink: string;
   buttonText: string;
   animation: string;
+  class?: string;
 }
 
 const Tab1 = () => {
@@ -23,7 +24,8 @@ const Tab1 = () => {
         "Poser un coffret en limite de votre propriété. Reliez votre terrain au réseau électrique dEnedis.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
-      animation: "fade-right"
+      animation: "fade-right",
+      class: "animate-fromLeft w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 2,
@@ -34,7 +36,8 @@ const Tab1 = () => {
         "Installer un compteur de chantier EDF ou un branchement provisoire.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
-      animation: "fade-up"
+      animation: "fade-up",
+      class: " w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
     {
       id: 3,
@@ -45,7 +48,8 @@ const Tab1 = () => {
         "Demander un raccordement enedis neuf avec pose de compteur Linky.",
       buttonText: "Faire ma demande",
       buttonLink: "/raccordement-electrique",
-      animation: "fade-left"
+      animation: "fade-left",
+      class: "animate-fromRight w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform"
     },
   ];
 
@@ -57,7 +61,7 @@ const Tab1 = () => {
           data-aos-duration="20"
           data-aos-once="true"
           key={service.id}
-          className="w-full p-4 border-[1px] border-[#1523dc] rounded-2xl group-hover:scale-105 group-focus:scale-105 transition-transform "
+          className={service.class}
         >
           <Image
             className="rounded-2xl img-tabs"

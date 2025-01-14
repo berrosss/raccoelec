@@ -15,10 +15,10 @@ export default function LogoCarousel() {
 
   return (
     <div className="carousel max-w-7xl mx-auto mb-16">
-      <div className="infinite-scroll-container inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <div className=" inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <ul className="flex infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-4">
           {logos.map((logo, index) => (
-            <li key={index} className="carousel-item bg-slate-200 rounded-md py-4 px-3 flex justify-center items-center">
+            <li key={index} className="carousel-item bg-[#f9fafb] rounded-md py-4 px-3 flex justify-center items-center hover:bg-[#dae1e7]">
               <Image src={logo.src} alt={logo.alt} width={170} height={160} />
             </li>
           ))}
@@ -28,8 +28,8 @@ export default function LogoCarousel() {
           aria-hidden="true"
         >
           {logos.map((logo, index) => (
-            <li key={index} className="carousel-item bg-slate-200 rounded-md py-4 px-3 flex justify-center items-center">
-              <Image src={logo.src} alt={logo.alt} width={170} height={160} />
+            <li key={index} className="carousel-item bg-[#f9fafb] rounded-md py-2 px-3 flex justify-center items-center hover:bg-[#dae1e7]">
+              <Image src={logo.src} alt={logo.alt} width={170} height={160}/>
             </li>
           ))}
         </ul>

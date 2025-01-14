@@ -242,41 +242,41 @@ const aproposnous = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 flex justify-center items-center text-center">
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.jpg")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat bg-gray-200 rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.jpg")' }}>
 
                     </div>
                     <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter vos démarches de raccordement électrique</h3>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                     Notre plateforme facilite vos demandes de raccordement électrique, qu&apos;il s&apos;agisse d&apos;Enedis ou d&apos;une ELD. 
                     </p>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                     Nous vous accompagnons à chaque étape, de la constitution du dossier jusqu&apos;à la mise en service. Grâce à notre expertise, nous assurons un suivi rigoureux pour un traitement rapide et efficace. En collaboration avec les gestionnaires de réseau et fournisseurs d&apos;énergie, nous garantissons une transition fluide. Bénéficiez d&apos;une assistance complète pour le raccordement et la signature de votre contrat, en toute simplicité.
                     </p>
                    
                 </div>
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/2.jpg")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/2.jpg")' }}>
 
                     </div>
                     <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Offrir une plateforme intuitive et complète pour vos démarches de raccordement</h3>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                         Grâce à une interface ergonomique et intuitive, Raccoelec simplifie la gestion de vos demandes de raccordement électrique. Notre plateforme met à votre disposition des outils performants pour suivre et gérer chaque étape du processus, de l&apos;étude technique à la signature de votre contrat d&apos;énergie.
                     </p>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                     En vous proposant des informations claires et des fonctionnalités avancées, Raccoelec vous permet d&apos;optimiser vos démarches et de prendre des décisions éclairées, tout en vous adaptant aux exigences du réseau électrique et aux évolutions réglementaires.
                     </p>
                 </div>
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.png")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.png")' }}>
                        
                     </div>
                     <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;éthique dans les démarches de raccordement</h3>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                         En centralisant toutes les informations nécessaires en un seul point et en rendant la majorité de nos services accessibles gratuitement, Raccoelec renforce la transparence dans les démarches de raccordement électrique.
                     </p>
-                    <p className="text-start text-gray-500 leading-6 transition-all duration-500 mb-8">
+                    <p className="text-start text-gray-500 leading-6 mb-8">
                         Notre plateforme soutient un environnement responsable et éthique en offrant un accompagnement clair, précis et conforme aux réglementations en vigueur. Cela permet aux utilisateurs de mieux comprendre les processus et de prendre des décisions en toute confiance, dans un esprit de collaboration avec les acteurs du secteur énergétique.
                     </p>
                 </div>
