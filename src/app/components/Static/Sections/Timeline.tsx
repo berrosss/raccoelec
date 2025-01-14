@@ -57,7 +57,7 @@ const Timeline = () => {
         </h1>
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-200" />
+          <div className="absolute xl:left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-200" />
 
           {/* Timeline Items */}
           {timelineItems.map((item, index) => (
@@ -68,7 +68,7 @@ const Timeline = () => {
             >
               {index % 2 === 0 ? (
                 <>
-                  <div  data-aos="fade-up" className="w-1/2 pr-8">
+                  <div  data-aos="fade-up" className="xl:w-1/2 pr-8">
                     <div className="timeline-card bg-white p-4 rounded-lg shadow-md">
                       <h3 className="font-bold text-lg">{item.title}</h3>
                       <p className="text-gray-600">{item.description}</p>
@@ -83,11 +83,11 @@ const Timeline = () => {
                       <item.icon className="text-white size-5" />
                     </div>
                   </div>
-                  <div className="w-1/2" />
+                  <div className="xl:w-1/2" />
                 </>
               ) : (
                 <>
-                  <div  className="w-1/2" />
+                  <div  className="xl:w-1/2" />
                   <div className="relative z-10">
                     <div
                       className={`timeline-icon ${
@@ -97,7 +97,7 @@ const Timeline = () => {
                       <item.icon className="text-white size-5" />
                     </div>
                   </div>
-                  <div className="w-1/2 pl-8" data-aos="fade-up">
+                  <div className="xl:w-1/2 pl-8" data-aos="fade-up">
                     <div className="timeline-card bg-white p-4 rounded-lg shadow-md">
                       <h3 className="font-bold text-lg">{item.title}</h3>
                       <p className="text-gray-600">{item.description}</p>

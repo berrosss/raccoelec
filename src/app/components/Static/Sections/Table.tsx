@@ -87,11 +87,8 @@ const Table = () => {
           <table ref={tableRef}  className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-white uppercase bg-[#1523dc]">
               <tr>
-                <th scope="col" className="p-4"></th>
-                <th
-                  scope="col"
-                  className="px-6 py-2 text-center text-xs tracking-wider"
-                >
+                <th scope="col" className="p-4 hidden sm:table-cell"></th>
+                <th scope="col" className="px-6 py-2 text-center text-xs tracking-wider">
                   Entreprises
                   <div className="text-xs text-green-300 mb-1">au total</div>
                   <b className="px-2 py-[2px] rounded text-white bg-[#000000] uppercase font-semibold text-xs w-auto mt-1 tracking-wide">
@@ -125,10 +122,7 @@ const Table = () => {
                     11.7 m
                   </b>
                 </th>
-                <th
-                  scope="col"
-                  className="px-6 py-2 text-center text-xs tracking-wider"
-                >
+                <th scope="col" className="px-6 py-2 text-center text-xs tracking-wider hidden sm:table-cell">
                   Creation
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
                   <b className="px-2 py-[2px] rounded text-white bg-[#000] uppercase font-semibold text-xs w-auto mt-1 tracking-wide">
@@ -162,10 +156,7 @@ const Table = () => {
                     2011
                   </b>
                 </th>
-                <th
-                  scope="col"
-                  className="px-6 py-2 text-center text-xs tracking-wider"
-                >
+                <th scope="col" className="px-6 py-2 text-center text-xs tracking-wider hidden sm:table-cell">
                   Dpts
                   <div className="text-xs text-green-300 mb-1">au total</div>
                   <b className="px-2 py-[2px] rounded text-white bg-[#000] uppercase font-semibold text-xs w-auto mt-1 tracking-wide">
@@ -199,10 +190,7 @@ const Table = () => {
                     105
                   </b>
                 </th>
-                <th
-                  scope="col"
-                  className="px-6 py-2 text-center text-xs tracking-wider"
-                >
+                <th scope="col" className="px-6 py-2 text-center text-xs tracking-wider hidden sm:table-cell">
                   Chiffre D&lsquo;affaires
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
                   <b className="px-2 py-[2px] rounded text-white bg-[#000000] uppercase font-semibold text-xs w-auto mt-1 tracking-wide">
@@ -236,10 +224,7 @@ const Table = () => {
                     12.7m€
                   </b>
                 </th>
-                <th
-                  scope="col"
-                  className="px-6 py-2 text-center text-xs tracking-wider"
-                >
+                <th scope="col" className="px-6 py-2 text-center text-xs tracking-wider hidden sm:table-cell">
                 &nbsp; Resultat Net &nbsp;
                   <div className="text-xs text-green-300 mb-1">en moyenne</div>
                   <b className="px-2 py-[2px] rounded text-white bg-[#000000] uppercase font-semibold text-xs w-auto mt-1 tracking-wide">
@@ -314,31 +299,33 @@ const Table = () => {
             </thead>
             <tbody>
               {shuffledData.map((item, index) => (
-                <tr className=" bg-[#ffffff] fade-in border-b-2 border-gray-300 " key={item.id} >
-                  <td className="border-b-2 border-gray-300 w-4 p-2 text-center">
+                <tr className={` bg-[#ffffff] fade-in border-b-2 border-gray-300 `} key={item.id} >
+                  <td className="border-b-2 border-gray-300 w-4 p-2 text-center hidden sm:table-cell">
                     <div className="w-6 h-6 bg-[#203edc] rounded-full flex justify-center items-center text-white text-center">
                       {index + 1}
                     </div>
                   </td>
+                  
                   <td
-                    scope="row"
-                    className="flex items-center px-6 py-6 whitespace-nowrap dark:text-white"
-                  >
-                    <Image
-                      decoding="async"
-                      className="w-10 h-10 object-contain"
-                      src={item.img}
-                      alt="Jese image"
-                      height={100}
-                      width={100}
-                    />
-                    <div className="ps-3">
-                      <div className="text-black text-xs font-semibold uppercase truncate w-full max-w-xs">
-                        {item.name}
+                      scope="row"
+                      className="flex items-center px-6 py-6 whitespace-nowrap dark:text-white truncate w-50"
+                    >
+                      <Image
+                        decoding="async"
+                        className="w-10 h-10 object-contain"
+                        src={item.img}
+                        alt="Jese image"
+                        height={100}
+                        width={100}
+                      />
+                      <div className="ps-3 flex-1 min-w-0">
+                        <div className="text-black text-xs font-semibold uppercase truncate">{item.name}
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td className="  px-6 py-2">
+                    </td>
+
+
+                  <td className="  px-6 py-2 hidden hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                         {item.date}
@@ -348,7 +335,7 @@ const Table = () => {
                       </div>
                     </div>
                   </td>
-                  <td className="  px-6 py-2">
+                  <td className="  px-6 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.dpts}
@@ -356,7 +343,7 @@ const Table = () => {
                       <div className="text-black text-xs font-normal">Fr</div>
                     </div>
                   </td>
-                  <td className=" px-6 py-2">
+                  <td className=" px-6 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.chifreAffaire} md€
@@ -409,7 +396,7 @@ const Table = () => {
                       </div>
                     </div>
                   </td>
-                  <td className=" px-6 py-2">
+                  <td className=" px-6 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.resultNet} md€
