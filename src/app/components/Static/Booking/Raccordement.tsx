@@ -655,9 +655,9 @@ const Raccordement = () => {
                               {methods.formState.errors.echeance && <p className="text-red-500 text-sm">{methods.formState.errors.echeance.message}</p>}
                           </div>
                           
-                          <h2 className="stepper-title text-[16px] leading-[24px] font-light text-left text-[#212529] flex justify-start items-center mt-14">
+                          <h2 className="stepper-title text-[16px] leading-[24px] font-light text-left text-[#212529] gap-3 mb-3mt-14">
                             Disposez-vous de votre autorisation d&lsquo;urbanisme? 
-                            <div className="relative group">
+                            <span className="relative group">
                             &nbsp;
                               <button className="bg-[#cef7f3] text-white px-1 py-1 rounded-full">
                                 <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -671,7 +671,7 @@ const Raccordement = () => {
                                 <p>Permis de construire</p>
                               </div>
 
-                            </div>
+                            </span>
                           </h2>
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {["Oui, je l'ai déjà", "Non, je ne l'ai pas encore", "Je n'en ai pas besoin"].map((option, index) => (
@@ -713,7 +713,7 @@ const Raccordement = () => {
                           Ma demande
                         </h4>
                         <ul className="mb-8">
-                          <li className="mb-3 flex justify-start items-center gap-3">
+                          <li className="mb-3 gap-3 mb-3gap-3">
                             <svg className="size-7 inline-block text-slate-500" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
@@ -721,19 +721,19 @@ const Raccordement = () => {
                             </svg>
                             Votre Besoin: <strong>{formData.need}</strong>
                           </li>
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <AiOutlineUserSwitch className="size-7 inline-block text-slate-500" />
                             Bénéficiaire: <strong>{formData.beneficiare}</strong>
                           </li>
-                          <li className="mb-3 flex justify-start items-center gap-3">
+                          <li className="mb-3 gap-3 mb-3gap-3">
                             <FiUser className="size-7 inline-block text-slate-500" />
                             Nom & Prenom: <strong>{formData.name} {formData.prenom}</strong>
                           </li>
-                          <li className="mb-3 flex justify-start items-center gap-3">
+                          <li className="mb-3 gap-3 mb-3gap-3">
                             <IoMailOutline className="size-7 inline-block text-slate-500" />
                             Email: <strong>{formData.email}</strong>
                           </li>
-                          <li className="mb-3 flex justify-start items-center gap-3">
+                          <li className="mb-3 gap-3 mb-3gap-3">
                             <svg className="size-7 inline-block text-slate-500" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
@@ -748,7 +748,7 @@ const Raccordement = () => {
                           Mon Project
                         </h4>
                         <ul className="mb-8">
-                          <li className="mb-3 flex justify-start items-center gap-3">
+                          <li className="mb-3 gap-3 mb-3gap-3">
                           <MdOutlineHomeWork className="size-8 inline-block text-slate-500" />
                             Le type de site souhaitez-vous raccorder:{" "}
                             <strong>{formData.type}</strong>
@@ -763,18 +763,18 @@ const Raccordement = () => {
                           Mon Planning
                         </h4>
                         <ul className="mb-8">
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <SlLocationPin className="size-8 inline-block text-slate-500" />
                             Où se situe votre projet: <strong>{formData.codePostal},{" "}
                             {formData.commune}, {formData.cadastral},{" "}
                             {formData.voie}, {formData.facultatif}.</strong>
                           </li>
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <MdOutlineHomeWork className="size-8 inline-block text-slate-500" />
                             Votre terrain est viabilisé?:{" "}
                             <strong><span className="capitalize">{formData.viabilise}</span></strong>
                           </li>
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <svg className="inline-block text-slate-500" fill="#64748b" height="40px" width="40px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" stroke="#e5e7eb" strokeWidth="0.00016">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
@@ -785,17 +785,17 @@ const Raccordement = () => {
                             <strong>Je ne connais pas mon besoin</strong>
                             </span>
                           </li>
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <LuDoorOpen className="size-7 inline-block text-slate-500" />
                             Les portes extérieures et fenêtres de mon local est:{" "}
                             <strong>{formData.portes}</strong>
                           </li>
-                          <li className="flex justify-start items-center gap-3 mb-3">
+                          <li className="gap-3 mb-3gap-3 mb-3">
                             <IoStopwatchOutline className="size-7 inline-block text-slate-500" />
                             Echéance souhaiter que le raccordement soit effectué:{" "}
                             <strong>{formData.echeance}</strong>
                           </li>
-                          <li className="flex justify-start items-center gap-3">
+                          <li className="gap-3 mb-3gap-3">
           
                             <svg className="inline-block text-slate-500" fill="#64748b" width="30px" height="30px" viewBox="-8 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#64748b">
                               <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
