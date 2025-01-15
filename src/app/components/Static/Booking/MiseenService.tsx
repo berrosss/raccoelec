@@ -101,6 +101,10 @@ const Raccordement = () => {
   });
 
   const onSubmit = (data: FormData) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll effect
+    });
     setFormData((prev) => ({ ...prev, ...data }));
     if(validationSchemaForm1.isValidSync(data)) {
       sendEmail(data);
@@ -315,7 +319,10 @@ const Raccordement = () => {
 
                           <div className="flex justify-center items-center gap-6 !mt-10">
                             <button id="prev1" type="button" className="bg-white border-[1px] border-[#16a974] rounded-full text-[#16a974] py-2.5 px-10 text-md font-semibold"
-                            onClick={() => setCurrentStep(currentStep - 1)}>
+                            onClick={() => {
+                              window.scrollTo({top: 0,behavior: "smooth"});
+                              setCurrentStep(currentStep - 1);
+                           }}>
                               Precedent
                             </button>
                             <button  type="submit" className="bg-[#16a974] border-[1px] border-[#16a974] rounded-full text-white py-2.5 px-10 text-md font-semibold">
@@ -473,7 +480,10 @@ const Raccordement = () => {
                         </div>
 
                         <div className="flex justify-end items-center gap-3 mt-10">
-                          <button id="prev2" onClick={() => setCurrentStep(currentStep - 1)} type="button" className="bg-white border-[1px] border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
+                          <button id="prev2" onClick={() => {
+                             window.scrollTo({top: 0,behavior: "smooth"});
+                             setCurrentStep(currentStep - 1);
+                          }} type="button" className="bg-white border-[1px] border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
                             Précédent
                           </button>
                           <button type="submit" className="bg-blue-600 border-[1px] border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold">
@@ -559,7 +569,10 @@ const Raccordement = () => {
                         </ul>
                       </div>
                       <div className="lg:flex space-y-2 lg:space-y-0 justify-end items-center gap-3 mt-10">
-                        <button onClick={() => setCurrentStep(currentStep - 1)}  id="prev4" type="button" className="bg-white border-[1px] w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
+                        <button onClick={() => {
+                             window.scrollTo({top: 0,behavior: "smooth"});
+                             setCurrentStep(currentStep - 1);
+                          }}  id="prev4" type="button" className="bg-white border-[1px] w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
                           Précédent
                         </button>
                         <button id="submit" type="submit" className="bg-blue-600 border-[1px] w-full lg:w-auto border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold">

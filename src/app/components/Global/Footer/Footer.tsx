@@ -157,10 +157,11 @@ const Footer = () => {
                 />
               </Link>
           </div>
+
           <div className="lg:flex gap-6">
 
             <div className="lg:w-4/12">
-              <p className="text-white text-xs mb-1 text-justify leading-6 ">
+              <p className="text-white text-xs mb-1 text-justify leading-6">
               Raccoelec est une solution 100% dédiée à l&apos;saccompagnement des clients dans leurs démarches de raccordement électrique : nouveau raccordement, installation de compteur de chantier, déplacement de compteur, et toutes les demandes auprès d&apos;sEnedis, EDF ou ENGIE. Grâce à notre expertise, nous offrons un service complet, fiable et rassurant, pour simplifier vos démarches au meilleur prix.
               </p>
               <div className="flex justify-start mt-6">
@@ -176,8 +177,10 @@ const Footer = () => {
               </div>
             </div>
 
+            
+
             <div className="lg:w-3/12">
-              <ul className="space-y-2 mt-10 lg:mt-0">
+              <ul className="mt-10 lg:mt-0 lg:ml-8 space-y-2">
                 {menuItems.map((item, index) => (
                   <li key={index} className="flex justify-start items-center">
                     <Link
@@ -192,8 +195,10 @@ const Footer = () => {
               </ul>
             </div>
 
+            <hr className="my-6"/>
+
             <div className="lg:w-3/12">
-              <ul className="space-y-2 mt-10 lg:mt-0">
+              <ul className="space-y-2 mt-2 lg:mt-0">
                 {menuItems2.map((item, index) => (
                   <li key={index} className="flex justify-start items-center">
                     <Link
@@ -208,8 +213,10 @@ const Footer = () => {
               </ul>
             </div>
 
+            <hr className="my-6"/>
+
             <div className="lg:w-3/12">
-              <ul className="space-y-2 mt-10 lg:mt-0">
+              <ul className="space-y-2 mt-2 lg:mt-0">
                 {menuItems3.map((item, index) => (
                   <li key={index} className="flex justify-start items-center">
                     <Link
@@ -224,7 +231,9 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="lg:w-2/12 mt-10 lg:mt-0">
+            <hr className="my-6"/>
+
+            <div className="lg:w-2/12 mt-2 lg:mt-0">
               <a href="tel:0970707070">
                 <button className="bg-white rounded-full font-semibold px-3 flex justify-center items-center">
                   <p className="inline-block text-lg">
