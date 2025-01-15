@@ -84,7 +84,7 @@ const Table = () => {
       <div className="mt-3 mb-20 overflow-x-auto">
         <div className="max-w-7xl mx-auto">
         <div className="container mx-auto p-0" >
-          <table ref={tableRef}  className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <table ref={tableRef}  className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-white uppercase bg-[#1523dc]">
               <tr>
                 <th scope="col" className="p-4 hidden sm:table-cell"></th>
@@ -305,7 +305,6 @@ const Table = () => {
                       {index + 1}
                     </div>
                   </td>
-                  
                   <td
                       scope="row"
                       className="flex items-center px-6 py-6 whitespace-nowrap dark:text-white truncate w-50"
@@ -322,10 +321,8 @@ const Table = () => {
                         <div className="text-black text-xs font-semibold uppercase truncate">{item.name}
                         </div>
                       </div>
-                    </td>
-
-
-                  <td className="  px-6 py-2 hidden hidden sm:table-cell">
+                  </td>
+                  <td className=" sm:pl-2 py-2 hidden hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                         {item.date}
@@ -335,7 +332,7 @@ const Table = () => {
                       </div>
                     </div>
                   </td>
-                  <td className="  px-6 py-2 hidden sm:table-cell">
+                  <td className=" sm:pl-2 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.dpts}
@@ -343,7 +340,7 @@ const Table = () => {
                       <div className="text-black text-xs font-normal">Fr</div>
                     </div>
                   </td>
-                  <td className=" px-6 py-2 hidden sm:table-cell">
+                  <td className=" sm:pl-2 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.chifreAffaire} md€
@@ -396,7 +393,7 @@ const Table = () => {
                       </div>
                     </div>
                   </td>
-                  <td className=" px-6 py-2 hidden sm:table-cell">
+                  <td className=" sm:pl-2 py-2 hidden sm:table-cell">
                     <div className="flex items-center justify-center flex-col">
                       <div className="text-black text-xs font-semibold">
                       {item.resultNet} md€
@@ -449,7 +446,7 @@ const Table = () => {
                       </div>
                     </div>
                   </td>
-                  <td className="  px-6 py-2">
+                  <td className=" sm:pl-2 py-2">
                     <div className="flex items-center justify-center flex-col">
                       <div className={`text-white text-xs font-semibold ${item.colorDelaiPaiment} px-3 rounded`}>
                       {item.delaiPaiment} Jrs

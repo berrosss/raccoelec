@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,8 +9,10 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Aos from "aos";
 
 const Hero = () => {
+
   const images = [
     "/assets/hero/1.jpg",
     "/assets/hero/2.jpeg",
@@ -19,13 +21,13 @@ const Hero = () => {
 
   return (
     <header className="bg-[#1523dc] pt-6 overflow-hidden mb-20">
-      <div className="container mx-auto pb-0 relative">
+      <div className="container mx-auto relative">
         <div className="flex flex-col xl:flex-row xl:items-center">
           <div className="xl:w-4/5 mb-8 xl:mb-0 xl:absolute xl:z-10 xl:top-32 xl:left-10">
-            <h1 className="px-6 text-4xl xs:text-3xl md:text-5xl xl:text-5xl font-bold text-white leading-tight mb-0 xl:pr-12" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>
+            <h1 className="px-6 text-3xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight mb-0 xl:pr-12" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>
               Votre raccordement Enedis.
             </h1>
-            <h1 className="px-6 text-4xl xs:text-3xl md:text-5xl xl:text-5xl font-bold text-white leading-tight mb-10 xl:pr-12" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>
+            <h1 className="px-6 text-3xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight mb-10 xl:pr-12" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>
               Un accompagnement sous tension.
             </h1>
             <p className="text-2xl text-white mb-10 px-6" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>

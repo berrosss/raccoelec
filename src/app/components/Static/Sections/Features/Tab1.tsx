@@ -54,22 +54,10 @@ const Tab1 = () => {
   ];
 
   return (
-    <div  className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {services.map((service) => (
-        <div
-          data-aos={service.animation}
-          data-aos-duration="20"
-          data-aos-once="true"
-          key={service.id}
-          className={service.class}
-        >
-          <Image
-            className="rounded-2xl img-tabs"
-            src={service.imgSrc}
-            alt={service.title}  // You may want to uncomment this and provide a meaningful alt text.
-            width="500"
-            height="500"
-          />
+        <div data-aos={service.animation} data-aos-duration="20" data-aos-once="true" key={service.id} className={service.class}>
+          <Image className="rounded-2xl img-tabs" src={service.imgSrc} alt={service.title} width="500" height="500"/>
           <h3 className="text-zinc-900 text-center mt-3 text-[20px] font-[700] mb-3">
             {service.title}
           </h3>

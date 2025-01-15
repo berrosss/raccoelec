@@ -49,10 +49,10 @@ const Timeline = () => {
     },
   ];
 
-  return (
-    <div className="flex justify-center items-center min-h-screen mb-20 px-5 lg:px-0 mt-16">
+  return ( 
+    <div className="flex justify-center items-center mb-20 px-5 lg:px-0 mt-0">
       <div className="w-full max-w-6xl "  >
-        <h1 className="text-4xl font-bold py-16">
+        <h1 className="text-4xl font-bold py-10">
             <span className="text-zinc-950">Nous <span className="text-[#203edc]">raccordons</span> votre projet en illuminant vos <span className="text-green-500">démarches.</span></span>
         </h1>
         <div className="relative">
@@ -80,7 +80,7 @@ const Timeline = () => {
                         item.isCompleted ? "bg-green-500" : "bg-gray-400"
                       } w-8 h-8 rounded-full flex items-center justify-center`}
                     >
-                      <item.icon className="text-white size-5" />
+                      {React.createElement(item.icon, { className: "text-white w-5 h-5" })}
                     </div>
                   </div>
                   <div className="xl:w-1/2" />
@@ -94,7 +94,7 @@ const Timeline = () => {
                         item.isCompleted ? "bg-green-500" : "bg-gray-400"
                       } w-8 h-8 rounded-full flex items-center justify-center`}
                     >
-                      <item.icon className="text-white size-5" />
+                      {React.createElement(item.icon, { className: "text-white w-5 h-5" })}
                     </div>
                   </div>
                   <div className="xl:w-1/2 pl-8" data-aos="fade-up">

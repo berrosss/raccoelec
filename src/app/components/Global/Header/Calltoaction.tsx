@@ -3,7 +3,7 @@ import React from 'react'
 import { MdPhone } from 'react-icons/md'
 import Drawer from './Mobile/Drawer'
 
-const Calltoaction = () => {
+const Calltoaction = () => { 
   return (
     <div className='flex justify-between items-center gap-2'>
         <div className='hidden lg:block'>
@@ -11,7 +11,7 @@ const Calltoaction = () => {
           <Link  href="/raccordement-electrique">
             <button className='py-2 pb-2.5 px-4 rounded-full text-slate-500 hover:bg-[#1523dc] font-medium border-2 hover:border-[#1523dc] hover:text-white'>Commencer ma demande</button>
           </Link>
-        </div>
+        </div> 
         <div className='block lg:hidden'>
           <Drawer />
         </div>

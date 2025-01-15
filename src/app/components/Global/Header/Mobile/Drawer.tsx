@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { GoChecklist } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
 
@@ -38,11 +41,20 @@ const drawemenu_bottom = [
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const router = useRouter();
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setIsAnimating(true);
   };
+
+  const callToAction = () => {
+    router.push("/raccordement-electrique");
+  }
+
+  const callToAction2 = () => {
+    router.push("/raccordement-electrique");
+  }
 
   useEffect(() => {
     if (isAnimating) {
@@ -55,9 +67,18 @@ const Drawer = () => {
 
   return (
     <div>
-      <button className="block lg:hidden" onClick={toggleDrawer}>
-        <LuMenu className="text-slate-700 size-8 relative top-[1px]" />
-      </button>
+      <div className="block lg:hidden flex gap-2">
+          <button onClick={callToAction} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
+            <GoChecklist className="text-slate-700 size-6 relative top-[1px]" />
+          </button>
+          <a href='tel:0970707070' className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
+            <FaPhoneAlt className="text-slate-700 size-5 relative top-[1px]" />
+          </a>
+          <button onClick={toggleDrawer} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
+            <LuMenu className="text-slate-700 size-7 relative top-[1px]" />
+          </button>
+      </div>
+
       <div
         className={`fixed inset-0 bg-gray-900 bg-opacity-95 z-40 transition-opacity duration-300 ease-in-out ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -100,7 +121,7 @@ const Drawer = () => {
                   ))}
                 </ul>
                 <div className="border-b-[1px] border-slate-200 my-5"></div>
-                <ul>
+                {/* <ul>
                   {drawemenu_bottom.map((item, index) => (
                     <li className="mb-2.5" key={index}>
                       <Link href={item.href}>
@@ -110,7 +131,7 @@ const Drawer = () => {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </nav>
           </div>

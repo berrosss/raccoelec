@@ -10,9 +10,9 @@ const About = () => {
   >
     <div className="bg-[#1523dc21] flex justify-between flex-col md:flex-row-reverse items-center p-[30px] rounded-[16px] gap-5 sm:gap-8 md:gap-10">
       <div className="max-w-[600px] order-2 sm:order-1">
-        <h3 className="text-4xl text-zinc-950 font-bold mb-3">
-          À propos de <span className="text-[#1523dc]">Raccoelec</span>
-        </h3>
+      <h3 className="sm:text-2xl lg:text-4xl xl:text-4xl text-zinc-950 font-bold mb-3 flex flex-col w-full text-justify sm:text-left block">
+        À propos de <span className="text-[#1523dc]">Raccoelec</span>
+      </h3>
         <p className="text-zinc-500 text-lg">
           Raccoelec est un spécialiste reconnu dans le domaine, offrant des services sur mesure pour accompagner particuliers et professionnels dans leurs démarches administratives et le suivi de leurs demandes de raccordement électrique à travers toute la France.
         </p>
