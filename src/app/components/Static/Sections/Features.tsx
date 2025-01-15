@@ -62,11 +62,11 @@ const Features = () => {
             </div>
 
             <div className={`transition-all duration-300 ease-in-out transform ${activeTab === 2 ? "block opacity-100 translate-y-0 scale-100" : "hidden opacity-0"}`}>
-              {/* <Tab2 /> */}
+              <Tab2 />
             </div>
 
             <div className={`transition-all duration-300 ease-in-out transform ${activeTab === 3 ? "block opacity-100 translate-y-0 scale-100" : "hidden opacity-0"}`}>
-              {/* <Tab3 /> */}
+              <Tab3 />
             </div>
           </div>
         </div>
