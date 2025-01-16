@@ -17,6 +17,7 @@ const Hero = () => {
     "/assets/hero/1.jpg",
     "/assets/hero/2.jpeg",
     "/assets/hero/3.jpeg",
+    "/assets/hero/4.png",
   ];
 
   return (

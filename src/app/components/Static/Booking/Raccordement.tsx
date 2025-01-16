@@ -200,7 +200,7 @@ const Raccordement = () => {
                           </h2>
                           <div className="flex justify-start items-start flex-col md:flex-row w-full gap-2 text-center">
                             {['Viabilisation de terrain', 'Raccordement provisoire', 'Raccordement définitif'].map((option, index) => (
-                              <div key={index} className="w-full">
+                              <div key={index} className="w-full lg:w-auto">
                                 <input
                                   type="radio"
                                   {...methods.register("need")}
