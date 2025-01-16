@@ -23,20 +23,6 @@ const drawemenu = [
   },
 ];
 
-const drawemenu_bottom = [
-  {
-    label: "0970707070",
-    href: "tel:0970707070",
-    style:
-      "py-2 px-4 rounded-full border-2 border-slate-300 font-medium text-slate-500 w-full",
-  },
-  {
-    label: "Commencer ma demande",
-    href: "#commencer-ma-demande",
-    style:
-      "py-2 pb-2.5 px-4 rounded-full bg-[#1523dc] font-medium border-2 border-[#1523dc] text-white w-full",
-  },
-];
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,10 +35,6 @@ const Drawer = () => {
   };
 
   const callToAction = () => {
-    router.push("/raccordement-electrique");
-  }
-
-  const callToAction2 = () => {
     router.push("/raccordement-electrique");
   }
 
@@ -121,17 +103,6 @@ const Drawer = () => {
                   ))}
                 </ul>
                 <div className="border-b-[1px] border-slate-200 my-5"></div>
-                {/* <ul>
-                  {drawemenu_bottom.map((item, index) => (
-                    <li className="mb-2.5" key={index}>
-                      <Link href={item.href}>
-                        <button onClick={toggleDrawer} className={item.style}>
-                          {item.label}
-                        </button>
-                      </Link>
-                    </li>
-                  ))}
-                </ul> */}
               </div>
             </nav>
           </div>
