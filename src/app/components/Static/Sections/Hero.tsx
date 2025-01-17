@@ -139,13 +139,10 @@ const Hero = () => {
                     key={index}
                     className="w-full h-full rounded-none"
                   >
-                    <Image
+                    <img
                       src={src}
                       alt={`Slide ${index + 1}`}
-                      className="object-cover rounded-none"
-                      fill
-                      quality={100}
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover rounded-none h-full"
                     />
                   </SwiperSlide>
                 ))}
