@@ -8,7 +8,7 @@ const Features = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-      <div className="flex justify-center items-center flex-col mb-20 px-5 lg:px-0" id="commencer-ma-demande">
+      <div className="flex justify-center items-center flex-col mb-20 mt-20 px-5 lg:px-0" id="commencer-ma-demande">
         <h2 className="text-3xl sm:text-3xl text-zinc-950 font-bold text-center mb-2">
           Les demandes de <span className="text-[#1623dc]">raccordement Enedis</span>
         </h2>

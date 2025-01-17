@@ -18,10 +18,12 @@ const Hero = () => {
   ];
 
   return (
-    <header className="bg-[#1523dc] pt-6 overflow-hidden mb-20">
-      <div className="container mx-auto relative">
+    <header className="bg-[#1523dc] overflow-hidden items-center flex">
+      <div className="container mx-auto relative top-20 sm:top-40 md:top-30 lg:top-10 xl:top-20">
         <div className="flex flex-col xl:flex-row xl:items-center">
-          <div className="xl:w-4/5 mb-8 xl:mb-0 xl:absolute xl:z-10 xl:top-32 xl:left-10">
+          
+          <div className="xl:w-4/5 mb-8 xl:mb-0 xl:absolute xl:z-10 xl:left-10 xl:pb-20">
+            
             <h1 className="px-6 text-3xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight mb-0 xl:pr-12" style={{ textShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)" }}>
               Votre raccordement Enedis.
             </h1>
@@ -54,44 +56,6 @@ const Hero = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start items-center space-x-8 mt-10 relative">
-              {/* <div className="flex justify-center items-center flex-col">
-                <Image
-                  src="https://raccoelec.fr/wp-content/uploads/2024/06/Google_logo-svg.png"
-                  alt="Google"
-                  className="w-[100px]"
-                  height={100}
-                  width={100}
-                />
-                <div className="flex items-center">
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                </div>
-                <p className="font-bold text-white text-md text-center">
-                  4.4/5 | 10000+ reviews
-                </p>
-              </div>
-              <div className="flex justify-center items-center flex-col">
-                <Image
-                  src="https://raccoelec.fr/wp-content/uploads/2024/06/Avis_Verifies-1.webp"
-                  alt="Google"
-                  className="w-[130px]"
-                  height={100}
-                  width={130}
-                />
-                <div className="flex items-center">
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                  <span className="text-yellow-400 text-2xl">★</span>
-                </div>
-                <p className="font-bold text-white text-md text-center">
-                  4.4/5 | 10000+ reviews
-                </p>
-              </div> */}
               <div className="flex space-x-4 px-6">
                 <div className="flex items-center space-x-2">
                   <div className="bg-green-100 rounded-full p-1">
@@ -120,10 +84,10 @@ const Hero = () => {
               </div>
 
             </div>
+
           </div>
 
-          <div className="xl:w-[68%] xl:ml-auto">
-            {/* Carousel placeholder */}
+          <div className="xl:w-[68%] xl:h-[68%] xl:ml-auto">
             <div className="relative h-96 xl:h-[600px] overflow-hidden xl:left-[22%] rounded-none">
               <Swiper
                 modules={[Navigation, Autoplay]}
@@ -141,13 +105,14 @@ const Hero = () => {
                     <img
                       src={src}
                       alt={`Slide ${index + 1}`}
-                      className="object-cover rounded-none h-full"
+                      className="object-cover rounded-none h-full w-full"
                     />
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
           </div>
+
         </div>
       </div>
     </header>
