@@ -83,6 +83,7 @@ const Drawer = () => {
               <div
                 className={`text-white text-2xl font-bold flex justify-between items-center border-b-[1px] border-slate-200 pb-8`}
               >
+                
               </div>
               <div className="">
                 <ul>
