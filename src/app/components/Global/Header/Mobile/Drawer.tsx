@@ -10,6 +10,10 @@ import { MdOutlineClose } from "react-icons/md";
 
 const drawemenu = [
   {
+    label: "Raccordement Electrique",
+    href: "/raccordement-electrique",
+  },
+  {
     label: "Demander estimation",
     href: "/demander-estimation",
   },
@@ -22,7 +26,6 @@ const drawemenu = [
     href: "/blog",
   },
 ];
-
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,18 +60,22 @@ const Drawer = () => {
             <FaPhoneAlt className="text-slate-700 size-5 relative top-[1px]" />
           </a>
           <button onClick={toggleDrawer} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
-            <LuMenu className="text-slate-700 size-7 relative top-[1px]" />
+            {isOpen ? (
+              <MdOutlineClose className="text-slate-700 size-7 relative top-[1px]" />
+            ) : (
+              <LuMenu className="text-slate-700 size-7 relative top-[1px]" />
+            )}
           </button>
       </div>
 
       <div
-        className={`fixed inset-0 bg-gray-900 bg-opacity-95 z-40 transition-opacity duration-300 ease-in-out ${
+        className={`fixed inset-0 top-[60px] bg-white bg-opacity-40 z-40 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
         <div
-          className={`fixed inset-y-0 left-0 z-50 w-full bg-white p-8 transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
+          className={`fixed inset-x-0 z-50 w-full bg-white ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
           <div>
@@ -76,33 +83,21 @@ const Drawer = () => {
               <div
                 className={`text-white text-2xl font-bold flex justify-between items-center border-b-[1px] border-slate-200 pb-8`}
               >
-                <Link href="/" aria-label="Raccoelec Logo">
-                  <Image
-                    src="/assets/logo2.png"
-                    alt="Reccoelec Logo"
-                    width={190}
-                    height={0}
-                  />
-                </Link>
-                <button onClick={toggleDrawer} className="">
-                  <MdOutlineClose className={`text-gray-900 size-8`} />
-                </button>
               </div>
-              <div className="mt-10">
+              <div className="">
                 <ul>
                   {drawemenu.map((item, index) => (
-                    <li className="mb-2.5" key={index}>
+                    <li className="border-b-[1px] py-4 px-8" key={index}>
                       <Link
                         href={item.href}
                         onClick={toggleDrawer}
-                        className="text-slate-600 hover:text-slate-800 text-lg font-semibold"
+                        className={`${item.label == "Nouveautés" ? "text-[#dabd1f]" : "text-slate-950"} hover:text-black text-lg font-semibold`}
                       >
                         {item.label}
                       </Link>
                     </li>
                   ))}
                 </ul>
-                <div className="border-b-[1px] border-slate-200 my-5"></div>
               </div>
             </nav>
           </div>
