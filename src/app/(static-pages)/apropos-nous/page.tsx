@@ -25,7 +25,7 @@ const aproposnous = () => {
 
         <section className="max-w-7xl mx-auto my-16 p-8">
             <div className="left-[15px] mb-8 text-black text-2xl font-extrabold font-['Open Sans'] leading-relaxed">
-                Équipe <span className="text-[#203edc]">Raccoelec</span>
+                Équipe <span className="text-[#203edc]">Raccoelec.</span>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 flex justify-center items-center text-center">
@@ -33,7 +33,7 @@ const aproposnous = () => {
                 <div className="bg-[#ffffff] p-4 rounded-[5px]">
                     <div className="flex flex-1 flex-col p-2">
                         <Image className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src="/assets/avatar/7.png" alt="" width={100} height={100} />
-                        <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Berros B</h3>
+                        <h3 className="mt-6 text-sm text-[#203edc] text-xl font-semibold text-center">Berros B.</h3>
                         <dl className="mt-1 flex flex-grow flex-col justify-between text-center">
                             <dd className="text-sm text-gray-600">Développeur</dd>
                         </dl>
@@ -245,7 +245,7 @@ const aproposnous = () => {
                     <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-center bg-no-repeat bg-gray-200 rounded-md" style={{ backgroundImage: 'url("/assets/mission/1.jpg")' }}>
 
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter vos démarches de raccordement électrique</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Faciliter vos démarches de raccordement électrique.</h3>
                     <p className="text-start text-gray-500 leading-6 mb-8">
                     Notre plateforme facilite vos demandes de raccordement électrique, qu&apos;il s&apos;agisse d&apos;Enedis ou d&apos;une ELD. 
                     </p>
@@ -259,7 +259,7 @@ const aproposnous = () => {
                     <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/2.jpg")' }}>
 
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Offrir une plateforme intuitive et complète pour vos démarches de raccordement</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Offrir une plateforme intuitive et complète pour vos démarches de raccordement.</h3>
                     <p className="text-start text-gray-500 leading-6 mb-8">
                         Grâce à une interface ergonomique et intuitive, Raccoelec simplifie la gestion de vos demandes de raccordement électrique. Notre plateforme met à votre disposition des outils performants pour suivre et gérer chaque étape du processus, de l&apos;étude technique à la signature de votre contrat d&apos;énergie.
                     </p>
@@ -272,7 +272,7 @@ const aproposnous = () => {
                     <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.png")' }}>
                        
                     </div>
-                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;éthique dans les démarches de raccordement</h3>
+                    <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;éthique dans les démarches de raccordement.</h3>
                     <p className="text-start text-gray-500 leading-6 mb-8">
                         En centralisant toutes les informations nécessaires en un seul point et en rendant la majorité de nos services accessibles gratuitement, Raccoelec renforce la transparence dans les démarches de raccordement électrique.
                     </p>
@@ -292,7 +292,7 @@ const aproposnous = () => {
                         NOTRE ENGAGEMENT
                     </h2>
                     <h1 className="text-gray-800 text-2xl font-bold mt-2  text-start">
-                        Dire la vérité, rien que la vérité sur le raccordement électrique
+                        Dire la vérité, rien que la vérité sur le raccordement électrique.
                     </h1>
                     <p className="text-gray-600 mt-4  text-start">
                         Nous sommes convaincus que la transparence est essentielle pour garantir la confiance et la pérennité dans vos démarches de raccordement électrique.

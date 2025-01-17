@@ -569,14 +569,14 @@ const Raccordement = () => {
 
                         </ul>
                       </div>
-                      <div className="lg:flex space-y-2 lg:space-y-0 justify-end items-center gap-3 mt-10">
+                      <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 gap-3 mt-10 justify-end items-center">
                         <button onClick={() => {
                              window.scrollTo({top: 0,behavior: "smooth"});
                              setCurrentStep(currentStep - 1);
-                          }}  id="prev4" type="button" className="bg-white border-[1px] w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
+                          }}  id="prev4" type="button" className="order-2 sm:order-1 bg-white border-[1px] w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
                           Précédent
                         </button>
-                        <button id="submit" type="submit" className="bg-blue-600 border-[1px] w-full lg:w-auto border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold">
+                        <button id="submit" type="submit" className="order-1 sm:order-2 bg-blue-600 border-[1px] w-full lg:w-auto border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold">
                           Transmettre ma demande
                         </button>
                       </div>

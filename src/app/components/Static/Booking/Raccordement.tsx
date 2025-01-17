@@ -533,13 +533,13 @@ const Raccordement = () => {
                                 disabled={isCheckboxChecked}
                               />
                               <span
-                                className={`inline-flex justify-center items-center h-8 ${number === "Plus de 36" ? "px-4" : "w-8"} rounded-full transition-all duration-200 
+                                className={`inline-flex justify-center items-center h-8 ${number === "Plus de 36" ? "!w-[120px] px-4w-[120]" : "w-8"} rounded-full transition-all duration-200 
                                 ${selectedPuissance === String(number) && !isCheckboxChecked ? "bg-blue-500 text-white" : "bg-white text-black"}
                                 ${isCheckboxChecked ? "pointer-events-none" : ""}
                                 hover:bg-gray-100`}>
                                 {number}
                                 {selectedPuissance === String(number) && !isCheckboxChecked && (
-                                  <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-t-blue-500 border-l-transparent border-r-transparent"/>
+                                  <span className=" absolute left-1/2 -bottom-2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-t-blue-500 border-l-transparent border-r-transparent"/>
                                 )}
                               </span>
                             </label>
@@ -819,20 +819,32 @@ const Raccordement = () => {
                           </li>
                         </ul>
                       </div>
-                      <div className="lg:flex space-y-2 lg:space-y-0 justify-end items-center gap-3 mt-10">
-                        <button onClick={() => {
-                             window.scrollTo({top: 0,behavior: "smooth"});
-                             setCurrentStep(currentStep - 1);
-                          }}  id="prev4" type="button" className="bg-white border-[1px] w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold">
-                          Précédent
-                        </button>
-                        <button id="submit" type="submit" className="bg-blue-600 border-[1px] w-full lg:w-auto border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold">
-                          Transmettre ma demande
-                        </button>
-                      </div>
+                      <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 gap-3 mt-10 justify-end items-center">
+                          <button
+                            onClick={() => {
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                              setCurrentStep(currentStep - 1);
+                            }}
+                            id="prev4"
+                            type="button"
+                            className="order-2 sm:order-1 bg-white border w-full lg:w-auto border-[#16a974] rounded text-[#16a974] py-2.5 px-10 text-md font-semibold"
+                          >
+                            Précédent
+                          </button>
+                          <button
+                            id="submit"
+                            type="submit"
+                            className="order-1 sm:order-2 bg-blue-600 border w-full lg:w-auto border-blue-600 rounded text-white py-2.5 px-10 text-md font-semibold"
+                          >
+                            Transmettre ma demande
+                          </button>
+                        </div>
+
                     </div>
+                               
                   )}
               </form>
+
             </FormProvider>
       </div>
     </div>

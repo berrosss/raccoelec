@@ -162,7 +162,7 @@ const Footer = () => {
 
             <div className="lg:w-4/12">
               <p className="text-white text-xs mb-1 text-justify leading-6">
-              Raccoelec est une solution 100% dédiée à l&apos;saccompagnement des clients dans leurs démarches de raccordement électrique : nouveau raccordement, installation de compteur de chantier, déplacement de compteur, et toutes les demandes auprès d&apos;sEnedis, EDF ou ENGIE. Grâce à notre expertise, nous offrons un service complet, fiable et rassurant, pour simplifier vos démarches au meilleur prix.
+              Raccoelec est une solution 100% dédiée à l&apos;accompagnement des clients dans leurs démarches de raccordement électrique : nouveau raccordement, installation de compteur de chantier, déplacement de compteur, et toutes les demandes auprès d&apos;Enedis, EDF ou ENGIE. Grâce à notre expertise, nous offrons un service complet, fiable et rassurant, pour simplifier vos démarches au meilleur prix.
               </p>
               <div className="flex justify-start mt-6">
                   <a className="col-auto col-xl px-1">
