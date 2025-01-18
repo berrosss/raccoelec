@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
-import { GoChecklist } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
 
@@ -29,16 +27,14 @@ const drawemenu = [
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const router = useRouter();
+
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setIsAnimating(true);
   };
 
-  const callToAction = () => {
-    router.push("/raccordement-electrique");
-  }
+
 
   useEffect(() => {
     if (isAnimating) {
@@ -52,9 +48,6 @@ const Drawer = () => {
   return (  
     <div>
       <div className="block lg:hidden flex gap-2">
-          {/* <button onClick={callToAction} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
-            <GoChecklist className="text-slate-700 size-6 relative top-[1px]" />
-          </button> */}
           <a href='tel:0970707070' className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
             <FaPhoneAlt className="text-slate-700 size-5 relative top-[1px]" />
           </a>
