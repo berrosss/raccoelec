@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
@@ -50,12 +49,12 @@ const Drawer = () => {
     }
   }, [isAnimating]);
 
-  return (
+  return (  
     <div>
       <div className="block lg:hidden flex gap-2">
-          <button onClick={callToAction} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
+          {/* <button onClick={callToAction} className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
             <GoChecklist className="text-slate-700 size-6 relative top-[1px]" />
-          </button>
+          </button> */}
           <a href='tel:0970707070' className="w-12 h-12 flex items-center justify-center rounded-full border-[1px] border-slate-700">
             <FaPhoneAlt className="text-slate-700 size-5 relative top-[1px]" />
           </a>

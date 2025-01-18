@@ -87,9 +87,14 @@ const Hero = () => {
 
           </div>
 
-          <div className="xl:w-[68%] xl:h-[68%] xl:ml-auto">
-            <div className="relative h-96 xl:h-[600px] overflow-hidden xl:left-[22%] rounded-none">
-              <Swiper
+          <div className="xl:w-[68%] xl:h-[100%] xl:ml-auto">
+            <div className="relative h-96 xl:h-[680px] overflow-hidden xl:left-[22%] rounded-none">
+              <img
+                src="/assets/hero/1.jpg"
+                alt="hero"
+                className="object-cover h-full w-full"
+              />
+              {/* <Swiper
                 modules={[Navigation, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -109,7 +114,7 @@ const Hero = () => {
                     />
                   </SwiperSlide>
                 ))}
-              </Swiper>
+              </Swiper> */}
             </div>
           </div>
 
