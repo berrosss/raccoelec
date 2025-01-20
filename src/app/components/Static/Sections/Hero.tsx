@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -89,12 +88,7 @@ const Hero = () => {
 
           <div className="xl:w-[68%] xl:h-[100%] xl:ml-auto">
             <div className="relative h-96 xl:h-[680px] overflow-hidden xl:left-[22%] rounded-none">
-              <img
-                src="/assets/hero/1.jpg"
-                alt="hero"
-                className="object-cover h-full w-full"
-              />
-              {/* <Swiper
+              <Swiper
                 modules={[Navigation, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -114,7 +108,7 @@ const Hero = () => {
                     />
                   </SwiperSlide>
                 ))}
-              </Swiper> */}
+              </Swiper>
             </div>
           </div>
 
