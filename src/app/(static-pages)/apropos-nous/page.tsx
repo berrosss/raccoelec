@@ -269,7 +269,7 @@ const aproposnous = () => {
                 </div>
 
                 <div className="w-full">
-                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.png")' }}>
+                    <div className="h-64 w-full bg-gray-200 mb-6 w-1/2 bg-cover bg-gray-200 bg-center bg-no-repeat rounded-md" style={{ backgroundImage: 'url("/assets/mission/3.jpg")' }}>
                        
                     </div>
                     <h3 className="text-start text-lg text-gray-900 font-medium leading-6 mb-4 group-hover:text-indigo-600">Promouvoir la transparence et l&apos;éthique dans les démarches de raccordement.</h3>
