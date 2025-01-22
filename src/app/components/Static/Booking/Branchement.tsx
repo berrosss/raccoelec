@@ -496,19 +496,19 @@ const Branchement = () => {
                                 </svg>
                                 Votre Besoin: <strong>{formData.need}</strong>
                               </li>
-                              <li className="flex justify-start items-center gap-3 mb-3">
+                              <li className=" justify-start items-center gap-3 mb-3">
                                 <AiOutlineUserSwitch className="size-7 inline-block text-slate-500" />
                                 Bénéficiaire: <strong>{formData.beneficiare}</strong>
                               </li>
-                              <li className="mb-3 flex justify-start items-center gap-3">
+                              <li className="mb-3  justify-start items-center gap-3">
                                 <FiUser className="size-7 inline-block text-slate-500" />
                                 Nom & Prenom: <strong>{formData.name} {formData.prenom}</strong>
                               </li>
-                              <li className="mb-3 flex justify-start items-center gap-3">
+                              <li className="mb-3  justify-start items-center gap-3">
                                 <IoMailOutline className="size-7 inline-block text-slate-500" />
                                 Email: <strong>{formData.email}</strong>
                               </li>
-                              <li className="mb-3 flex justify-start items-center gap-3">
+                              <li className="mb-3  justify-start items-center gap-3">
                                 <svg className="size-7 inline-block text-slate-500" width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
                                   <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
@@ -523,7 +523,7 @@ const Branchement = () => {
                               Mon Project
                             </h4>
                             <ul className="mb-8">
-                              <li className="mb-3 flex justify-start items-center gap-3">
+                              <li className="mb-3  justify-start items-center gap-3">
                               <MdOutlineHomeWork className="size-8 inline-block text-slate-500" />
                                 Le type de site souhaitez-vous raccorder:{" "}
                                 <strong>{formData.type}</strong>
@@ -538,13 +538,13 @@ const Branchement = () => {
                               Mon Planning
                             </h4>
                             <ul className="mb-8">
-                              <li className="flex justify-start items-center gap-3 mb-3">
+                              <li className=" justify-start items-center gap-3 mb-3">
                                 <SlLocationPin className="size-8 inline-block text-slate-500" />
                                 Où se situe votre projet: <strong>{formData.codePostal},{" "}
                                 {formData.commune}, {formData.cadastral},{" "}
                                 {formData.voie}, {formData.facultatif}.</strong>
                               </li>
-                              <li className="flex justify-start items-center gap-3 mb-3">
+                              <li className=" justify-start items-center gap-3 mb-3">
                                 <IoStopwatchOutline className="size-7 inline-block text-slate-500" />
                                 Echéance souhaiter que le raccordement soit effectué:{" "}
                                 <strong>{formData.echeance}</strong>
